@@ -1,0 +1,363 @@
+*{
+    padding: 0; 
+    margin: 0 ; 
+}
+/* NAVBAR */ 
+.navbar{
+    padding: 30px 40px; 
+    display: flex; 
+    justify-content: space-between; 
+    position: fixed; 
+    width: 100%; 
+    z-index: 1; 
+}
+
+.bg-light{
+    background-color: rgba(255,255,255, 0.8) !important; 
+}
+
+#navbarSupportedContent{
+    justify-content: flex-end;
+}
+
+.mr-auto{
+    margin: 0px !important; 
+}
+
+.navbar-light .navbar-toggler{
+    border-color: transparent; 
+}
+
+.hide{
+    display: none !important;  
+}
+/* HERO SECTION */ 
+/* moon*/ 
+.page {
+    padding-top: 50px;
+    width: 100%; 
+    height: 100vh; 
+}
+
+#scene{
+    overflow:hidden; 
+    height: 100vh;
+}
+
+#moon{
+    position: relative; 
+    left: 22%; 
+    overflow-y: hidden; 
+    width: 85%; 
+    height: 100% !important; 
+    opacity: 0.6; 
+}
+
+[data-depth="0.2"], [data-depth="0.1"] {
+     top: 35% !important; 
+     left: 40% !important; 
+     margin-right: 10%; 
+}
+
+.layer h1 h2{
+    color: #5C5C5C; 
+    font-family: "SF Pro Text"; 
+      
+}
+.layer h1{
+    font-size: 30px; 
+    font-weight: 400; 
+    line-height: 45px; 
+}
+
+.layer h2{
+    font-size: 26px; 
+    font-weight: 300;
+    line-height: 44px;  
+}
+
+#replace{
+    font-weight: 500; 
+    margin-top: -8px; 
+}
+/* line w/ links */ 
+.scroll{
+    display: flex; 
+    flex-direction: column; 
+    position: fixed; 
+    width: 90vh;
+    top: 64vh;
+    margin-left: 10vh;
+    z-index: 1; 
+}
+
+.linkedin img, .email img{
+    width: 3%; 
+    margin-bottom: 20px; 
+}
+
+.github img{
+    width: 5%; 
+    margin-bottom: 20px; 
+    margin-left: -6px; 
+}
+
+.text{
+    font-size: 16px;
+    font-weight: 300;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    width: 10%; 
+    top: 35px; 
+    width: 3%; 
+    margin-top: 15%; 
+}
+
+/* Sidebar */ 
+#sidebar{
+    background-color: rgba(207, 224, 255, 0.6);  
+    height: 103vh; 
+    position: absolute; 
+    top: -103vh; 
+    padding: 30px 40px; 
+    width: 100%; 
+    min-width: 250px; 
+    flex-direction: column;  
+    align-content: center; 
+    justify-content: center; 
+    display: flex;  
+    color: #333333; 
+}
+
+.wrapper {
+    position: fixed;
+    width: 20%; 
+    margin:0;
+}
+   
+.sidebar-header, .description{
+    margin-bottom: 15px; 
+}
+
+.list-unstyled.components li{
+    margin-bottom: 10px; 
+    font-size: 18px; 
+    color: #333333;  
+}
+
+.list-unstyled.components a{
+    color: inherit;
+    opacity: 1 !important; 
+}
+
+.around{
+    display: center; 
+}
+
+.icons{
+    display: flex; 
+    flex-direction: row; 
+    width: 100%; 
+    flex: 1; 
+    align-items: center;
+    justify-content: center; 
+    margin-top: 50px; 
+}
+
+.linkedinIcon, .githubIcon, .emailIcon{
+    width: 100%; 
+    opacity: 0.6; 
+    padding-left: 5px; 
+    padding-right: 5px; 
+    max-width: 50px; 
+}
+
+.Elink{
+    top: 5px;
+    position: relative;  
+}
+
+.Elink, .Llink, .Glink{ 
+    width: 50%; 
+    display: block; 
+    justify-content: space-around; 
+    text-align: center;
+}
+
+
+/* Body */ 
+.portfolio{
+    margin-left: 10%; 
+    justify-content: flex-end;  
+    width: 80%; 
+    padding: 50px; 
+    padding-bottom: 0; 
+    overflow-x: hidden; 
+}
+
+.project{
+    display:flex; 
+    flex-direction: row;  
+}
+
+.image{
+    width: 100%; 
+}
+
+.description{
+    width: 60%; 
+}
+
+.image img{
+    width: 100%; 
+}
+
+.category, .category2{
+    margin-bottom: 5px; 
+}
+
+.category, .title, .blurb{
+    text-align: right; 
+}
+
+.category2, .title2, .blurb2{
+    text-align: left; 
+}
+
+#description{
+    display: flex; 
+    flex-direction: row; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+.blurb{ 
+    background-color: darkblue;  
+    opacity: 0.8; 
+    color: white; 
+    padding: 20px; 
+    position: relative;
+    left: -23%; 
+}
+
+.blurb2{ 
+    background-color: darkblue;  
+    opacity: 0.8; 
+    color: white; 
+    padding: 20px; 
+    position: relative;
+    right: -23%; 
+}
+
+.visit{
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+}
+
+.visit a{
+    display: block; 
+    justify-content: flex-end;
+    align-items: flex-end; 
+    width: 10%;
+}
+
+.visit img, .visit2 img{
+    width: 40%; 
+}
+
+.visit2{
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.visit2 a{
+    display: block; 
+    justify-content: flex-start;
+    align-items: flex-start; 
+    width: 10%;
+}
+
+
+.next{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-left: -30%;
+    height: 10%;
+}
+
+.next2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    margin-right: -30%;
+    height: 10%;
+}
+
+.skills{
+    display: flex; 
+    flex-direction: row; 
+    list-style-type: none;
+    justify-content: flex-end; 
+}
+
+.skills2{
+    display: flex; 
+    flex-direction: row; 
+    list-style-type: none;
+    justify-content: flex-start; 
+}
+
+.skills li{
+    margin-left: 10px; 
+}
+
+.skills2 li{
+    margin-right: 10px; 
+}
+
+/* Extra small devices (portrait phones, less than 576px) */ 
+@media (max-width: 575.98px) { 
+    .navbar{
+        padding: 20px 24px ;  
+    }
+    
+    .page{
+        padding-top: 80px;  
+    }
+
+    .moon{
+        left: -40%;
+        top: -50%;
+        overflow-x: hidden;
+        width: 150%;
+        height: 160%;
+    }
+ }
+
+/*  Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+    .navbar{
+        padding: 20px 24px;
+    }
+
+    .page{
+        padding-top: 80px;  
+    }
+}
+
+/*  Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+ }
+
+
+
+/* Extra large devices (large desktops)*/
+/* No media query since the extra-large breakpoint has no upper bound on its width*/
