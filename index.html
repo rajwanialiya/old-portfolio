@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="portfolio2.css" />
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
-
+    <link rel="stylesheet" type="text/css" href="css/portfolio2.css" />
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="portfolio.js"></script>
     <script type="text/javascript" src="parallax.js"></script>
     <script type="text/javascript" src="replaceText.js"></script>
-    <script type="text/javascript" src="scroll.js"></script>
-    <script type="text/javascript" src="fullpage.js"></script>
+    <script src="scroll.js"></script>
 
     <title>Aliya Rajwani</title>
   </head>
@@ -47,58 +44,59 @@
           </ul>
         </div>
       </nav>
-      <div>
-          <div class="scroll">
-            <a href="https://www.linkedin.com/in/aliya-rajwani-b1466117b/" target="_blank" class="linkedin"><img src="assets/linkedin.svg"></a>
-            <a href="https://github.com/rajwanialiya" target="_blank" class="github"><img src="assets/github.svg"/></a>
-            <a href="mailto:rajwani.aliya@gmail.com" target="_blank" class="email"><img src="assets/email.svg"/></a>
-            <p class="text">Scrolldown</p>
-          </div>
-          <ul id="scene">
-            <li class="layer" data-depth="0.4">
-              <img id="moon" src="assets/blue2.svg">
-            </li>
-            <li onload="startReplace()" class="layer" data-depth="0.1">
-              <h1 id="text"> Hi there, I'm Aliya</h1>
-              <h2> I'm a Systems Design Engineering student at the University of Waterloo, an aspiring front-end developer and am interested in</h2>
-              <h2 id="replace"></h2>
-            </li>
-            <!--<li class="layer" data-depth="1"><h1> Hey there! My name is Aliya</h1></li>  -->
-          </ul>    
-      </div>
-      <div id="fullpage">
-      <div class="section fp-section active">
-        <div class="portfolio">
-          <div class="project"> 
-            <div class="image">
-                <img src="assets/Website-Mockup.png">
+      <div class="mainbag">
+        <div>
+            <div class="scroll">
+              <a href="https://www.linkedin.com/in/aliya-rajwani-b1466117b/" target="_blank" class="linkedin"><img src="assets/linkedin.svg"></a>
+              <a href="https://github.com/rajwanialiya" target="_blank" class="github"><img src="assets/github.svg"/></a>
+              <a href="mailto:rajwani.aliya@gmail.com" target="_blank" class="email"><img src="assets/email.svg"/></a>
+              <p class="text">Scrolldown</p>
             </div>
-            <div class="description">
-              <p class="category">Web & UI/UX</p>
-              <h2 class="title">Flashfood Main Website</h2>
-              <div id="description">
-                <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="next">
-                  <a href="https://www.flashfood.com/" target="_blank" class="visit"><img src="assets/external.png"></a>
-                </div>
+            <ul id="scene">
+              <li class="layer" data-depth="0.4">
+                <img id="moon" src="assets/blue2.svg">
+              </li>
+              <li class="layer" data-depth="0.1">
+                <h1 id="text"> Hi there, it's Aliya</h1>
+                <h2> I'm a Systems Design Engineering student at the University of Waterloo and an aspiring front-end developer. I'm interested in</h2>
+                <span id="typed"></span>     
+              </li>
+            </ul>    
+        </div>
+        <div>
+          <div class="portfolio">
+            <div class="project"> 
+              <div class="image">
+                  <h2 class="textOverlay">Read More</h2>
+                  <a href="pages/flashfoodSite.html"><img src="assets/Website-Mockup.png"></a>
               </div>
-              <ul class="skills">
-                <li>Responsive Design</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Skill</li>
-                <li>Skill</li>
-              </ul>
+              <div class="description">
+                <p class="category">Web Development & UI/UX</p>
+                <h2 class="title">Flashfood.com</h2>
+                <div id="description">
+                  <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="next">
+                    <a href="https://www.flashfood.com/" target="_blank" class="visit"><img src="assets/external.png"></a>
+                  </div>
+                </div>
+                <ul class="skills">
+                  <li>Responsive Design</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Skill</li>
+                  <li>Skill</li>
+                </ul>
+                <div class="moreDiv"><button onclick="window.location.href='pages/flashfoodSite.html'" class="more">Read More →</button></div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-        <div class="section fp-section active">
+        <div> 
           <div class="portfolio">
             <div class="project"> 
               <div class="description">
-                  <p class="category2">Web & Development</p>
-                  <h2 class="title2">Count Your Change</h2>
+                  <p class="category2">Web Development & Back-end</p>
+                  <h2 class="title2">Food Waste Counter</h2>
                   <div id="description">
                     <div class="next2">
                         <a href="https://www.flashfood.com/" target="_blank" class="visit2"><img src="assets/external.png"></a>
@@ -106,19 +104,50 @@
                     <p class="blurb2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   </div>
                   <ul class="skills2">
-                    <li>JavaScript</li>
+                    <li>Javascript</li>
                     <li>SQL</li>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>Skill</li>
+                    <li>Vue</li>
+                    <li>Git</li>
                   </ul>
+                  <div class="moreDiv2"><button class="more2">Read More →</button></div>
               </div>  
               <div class="image">
+                <h2 class="textOverlay2">Read More</h2>
                 <img src="assets/Website-Mockup.png">
               </div>  
             </div>
           </div>
         </div>
+        <div>
+        <div class="portfolio">
+            <div class="project"> 
+                <div class="image">
+                    <h2 class="textOverlay3">Read More</h2>
+                    <img src="assets/Website-Mockup.png">
+                </div>
+                    <div class="description">
+                      <p class="category">App Development & UI/UX</p>
+                      <h2 class="title">Nailed It</h2>
+                      <div id="description">
+                        <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="next">
+                          <a href="https://www.flashfood.com/" target="_blank" class="visit"><img src="assets/external.png"></a>
+                        </div>
+                      </div>
+                      <ul class="skills">
+                        <li>Responsive Design</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Skill</li>
+                        <li>Skill</li>
+                      </ul>
+                      <div class="moreDiv"><button class="more">Read More →</button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>       
       </div>
       
       
@@ -131,13 +160,14 @@
 
         //methods
         fullpage_api.setAllowScrolling(false);
-      </script> 
-
-      <script>
-          var scene = document.getElementById('scene');
-          var parallax = new Parallax(scene);
-      </script>-->
-    <!-- Optional JavaScript -->
+      </script> -->
+  
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

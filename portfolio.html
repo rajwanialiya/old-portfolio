@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="portfolio.js"></script>
+    <script src="parallax.js"></script>
+    <script src="replaceText.js"></script>
+    <script src="scroll.js"></script>
+
+    <title>Aliya Rajwani</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Aliya Rajwani</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Get In Touch
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+          <div class="scroll">
+            <a href="https://www.linkedin.com/in/aliya-rajwani-b1466117b/" target="_blank" class="linkedin"><img src="assets/linkedin.svg"></a>
+            <a href="https://github.com/rajwanialiya" target="_blank" class="github"><img src="assets/github.svg"/></a>
+            <a href="mailto:rajwani.aliya@gmail.com" target="_blank" class="email"><img src="assets/email.svg"/></a>
+            <p class="text">Scrolldown</p>
+          </div>
+          <ul id="scene">
+            <li class="layer" data-depth="0.4">
+              <img id="moon" src="assets/blue2.svg">
+            </li>
+            <li class="layer" data-depth="0.1">
+              <h1 id="text"> Hi there, I'm Aliya</h1>
+              <h2> I'm a Systems Design Engineering student at the University of Waterloo, an aspiring front-end developer and am interested in</h2>
+              <h2 id="replace"></h2>
+            </li>
+            <!--<li class="layer" data-depth="1"><h1> Hey there! My name is Aliya</h1></li>  -->
+          </ul>    
+      </div>
+      <div class="wrapper">
+          <nav id="sidebar" class="hide">
+              <div class="sidebar-header">
+                  <h3>Aliya Rajwani</h3>
+              </div>
+              <ul class="list-unstyled components">
+                  <p class="description">LITTLE DESCRIPTION</p>
+                  <li class="active">
+                    <!--<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                      <li>
+                        <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Home 3</a>
+                      </li>
+                    </ul>
+                  </li>-->
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <!--<li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                      <li>
+                        <a href="#">Page 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Page 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Page 3</a>
+                      </li>
+                    </ul>
+                  </li>-->
+                  <li>
+                      <a href="#">Work</a>
+                  </li>
+                  <li>
+                      <a href="mailto:rajwani.aliya@gmail.com">Resume</a>
+                  </li>
+                  <li>
+                      <a href="mailto:rajwani.aliya@gmail.com">Contact</a>
+                  </li>
+                  <!--<div class="container">
+                    <li class="icons">
+                      <a href="https://www.linkedin.com/in/aliya-rajwani-b1466117b/" class="Llink" target="_blank"><img src="linkedin.svg"  class="linkedinIcon"></a>
+                      <a href="https://github.com/rajwanialiya" class="Glink" target="_blank"><img class="githubIcon" src="github.svg"/></a>
+                      <a href="mailto:rajwani.aliya@gmail.com" class="Elink" target="_blank"><img  class="emailIcon" src="email.svg"/></a>
+                    </li>
+                  </div> -->
+              </ul>
+          </nav>
+        </div>
+        <div class="portfolio" class="2">
+          <div class="section"> 
+              <div class="image">
+                  <img src="assets/Website-Mockup.png">
+              </div>
+              <div class="description">
+                <p class="category">Web & UI/UX</p>
+                <h2 class="title">Flashfood Main Website</h2>
+                <div id="description">
+                  <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="next">
+                    <a href="https://www.flashfood.com/" target="_blank" class="visit"><img src="assets/external.png"></a>
+                  </div>
+                </div>
+                <ul class="skills">
+                  <li>Responsive Design</li>
+                  <li>Skill</li>
+                  <li>Skill</li>
+                  <li>Skill</li>
+                  <li>Skill</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+          <div class="portfolio">
+              <div class="section"> 
+                  <div class="image">
+                      <img src="assets/Website-Mockup.png">
+                  </div>
+                  <div class="description">
+                    <p class="category">Web & UI/UX</p>
+                    <h2 class="title">Flashfood Main Website</h2>
+                    <div id="description">
+                      <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <div class="next">
+                        <a href="https://www.flashfood.com/" target="_blank" class="visit"><img src="assets/external.png"></a>
+                      </div>
+                    </div>
+                    <ul class="skills">
+                      <li>Responsive Design</li>
+                      <li>Skill</li>
+                      <li>Skill</li>
+                      <li>Skill</li>
+                      <li>Skill</li>
+                    </ul>
+                  </div>
+              </div>
+        </div>
+      <!--<svg height="410" width="900">
+          <line class="line" x1="5" y1="0" x2="5" y2="900" style="stroke:rgb(0,0,0);stroke-width:2" />
+      </svg>-->
+      
+      
+      <script>
+          var scene = document.getElementById('scene');
+          var parallax = new Parallax(scene);
+      </script>
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

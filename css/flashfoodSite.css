@@ -1,0 +1,132 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+.header{
+    background: rgb(0, 142, 65) url("../assets/header.svg"); 
+    background-size: cover; 
+    background-position: 0px 550px; 
+    height: 50vh; 
+}
+
+.fill{
+    height: 300vh;  
+}
+
+#sidebar{
+    position: fixed; 
+    background-color: white; 
+    height: 100%; 
+    width: 12vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-content: center; 
+    align-items: center; 
+    padding-top: 40px; 
+    padding-bottom: 50px; 
+    font-size: 14px; 
+    color: grey; 
+}
+
+.projectNav{
+    display: flex; 
+    flex-direction: row; 
+}
+
+.projectNav p{
+    margin: 0; 
+    text-transform: uppercase; 
+    margin-right: 20px; 
+}
+
+.projectNav a:hover{
+    text-decoration: none !important; 
+    color: rgb(0, 142, 65);  
+}
+
+.projectNav a{
+    color: grey; 
+    transition: color 0.5s ease-in-out; 
+}
+
+.projectTitle{
+    text-transform: uppercase; 
+    width: 50vh; 
+    padding: 75px; 
+}
+
+.projectTitle, .projectNav{
+    transform: rotate(90deg);
+}
+
+.home{
+    position: relative; 
+    top: -12vh; 
+}
+
+/* scroll progress */ 
+.side{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin: 0; 
+}
+  
+  .progress-container {
+    width: 100vh;
+    height: 5px;
+    background: lightgrey;
+    transform: rotate(90deg);
+    position: fixed;
+    top: 49.4vh;
+    left: -38vh;
+    overflow-y: hidden;    
+    margin: 0; 
+}
+  
+  .progress-bar {
+    margin: 0; 
+    height: 100%;
+    background:darkgrey;
+    width: 8%;
+  }
+  
+  .content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+  }
+
+/* Case Study */ 
+#caseStudy{
+    position: relative; 
+    margin-left: 12vh; 
+    padding: 20px; 
+    display: flex; 
+    flex: column; 
+    justify-content: center; 
+    align-content: center; 
+    color: #333
+}
+
+.intro{
+    display: flex; 
+    flex-direction: row;
+    width: 70%; 
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+}
+
+.title{
+    width: 30%;
+    margin-right: 30px; 
+    
+}
+
+.description{
+    width: 60%; 
+    color: #6D6D6D; 
+}

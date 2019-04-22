@@ -95,7 +95,7 @@
     position: fixed; 
     width: 90vh;
     top: 64vh;
-    margin-left: 10vh;
+    margin-left: 8vh;
     z-index: 1; 
 }
 
@@ -257,7 +257,7 @@
 
 .image:hover .textOverlay, .image:hover .textOverlay2, .image:hover .textOverlay3{
     visibility: visible; 
-    color: darkblue;
+    color: white;
     z-index: 100; 
 }
 

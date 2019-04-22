@@ -2,14 +2,11 @@ var $win = $(window);
 var height = $win.height();
 
 $win.scroll(function(){
-    if ($(document).scrollTop() > height) {
-        $('.navbar').addClass('hide');
-        $('#sidebar').removeClass('hide') 
+    if ($(document).scrollTop() > 0.8*height) {
+        $('.navbar').addClass('opacity');
     }
     else {
-        $('.navbar').removeClass('hide'); 
-        $('#sidebar').addClass('hide')
+        $('.navbar').removeClass('opacity'); 
     }
-console.log("scroll");
-
+console.log("scroll"); 
 }); 
