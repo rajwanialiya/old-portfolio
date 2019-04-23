@@ -220,7 +220,7 @@
 
 /* THE BLOB */
 .blob {
-    fill: rgba(255, 199, 0, 0.1);
+    fill: rgba(255, 199, 0, 0.2);
     width: 10vmax;
     z-index: -1;
     animation: move 30s ease-in-out infinite;
