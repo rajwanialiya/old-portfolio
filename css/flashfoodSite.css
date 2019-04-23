@@ -27,6 +27,7 @@
     padding-bottom: 50px; 
     font-size: 14px; 
     color: grey; 
+    z-index: 1; 
 }
 
 .projectNav{
@@ -69,28 +70,27 @@
 .side{
     position: fixed;
     top: 0;
-    z-index: 1;
     width: 100%;
-    background-color: #f1f1f1;
     margin: 0; 
 }
   
-  .progress-container {
+.progress-container {
     width: 100vh;
     height: 5px;
-    background: lightgrey;
+    background-color: #FBFBFB;
     transform: rotate(90deg);
     position: fixed;
-    top: 49.4vh;
-    left: -38vh;
+    top: 49.6vh;
+    left: -37.6vh;
     overflow-y: hidden;    
     margin: 0; 
+    z-index: 2; 
 }
   
   .progress-bar {
     margin: 0; 
     height: 100%;
-    background:darkgrey;
+    background: rgb(255, 199, 0);
     width: 8%;
   }
   
@@ -104,12 +104,23 @@
 #caseStudy{
     position: relative; 
     margin-left: 12vh; 
-    padding: 20px; 
+    padding: 50px; 
     display: flex; 
-    flex: column; 
+    flex-direction: column; 
     justify-content: center; 
     align-content: center; 
+    align-items: center; 
     color: #333
+}
+
+#caseStudy p{
+    color: #6D6D6D;
+    line-height: 28px; 
+}
+
+#caseStudy h1, #caseStudy h2, #caseStudy h3, #caseStudy h4{
+    line-height: 44px; 
+    margin-top: 10px; 
 }
 
 .intro{
@@ -117,7 +128,7 @@
     flex-direction: row;
     width: 70%; 
     padding-top: 60px; 
-    padding-bottom: 60px; 
+    padding-bottom: 70px; 
 }
 
 .title{
@@ -129,4 +140,64 @@
 .description{
     width: 60%; 
     color: #6D6D6D; 
+}
+
+.logoContainer{
+    overflow: hidden; 
+    align-content: center; 
+    align-items: center; 
+    justify-content: center;  
+    width: 100%; 
+    display: block; 
+    text-align: center; 
+    margin-bottom: 40px; 
+}
+
+.logo{
+    position: relative; 
+    top: 8px; 
+    width: 20%; 
+}
+
+/* Project Overview */
+.overview{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;  
+    width: 80%;
+    margin-bottom: 80px; 
+}
+
+.role, .timeline, .challenge, .tools{
+    display: flex; 
+    flex-direction: column; 
+}
+
+.role p, .timeline p, .challenge p, .tools p{
+    color: #6D6D6D; 
+    font-family: "SF Pro Display"; 
+    text-transform: uppercase; 
+    margin-bottom: 5px; 
+}
+
+.role h6, .timeline h6, .challenge h6, .tools h6{
+    font-family: "SF Pro Display"; 
+    font-weight: 400; 
+    font-size: 18px; 
+}
+
+/* Writing */
+.writing{
+    justify-content: flex-start;
+    width: 80%;  
+}
+
+.columns{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+}
+
+.columns div{
+    width: 45%; 
 }
