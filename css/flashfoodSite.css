@@ -64,6 +64,11 @@
 .home{
     position: relative; 
     top: -12vh; 
+    width: 40%; 
+}
+
+.home img{
+    width: 100%; 
 }
 
 /* scroll progress */ 
@@ -155,8 +160,8 @@
 
 .logo{
     position: relative; 
-    top: 8px; 
-    width: 20%; 
+    top: 20px; 
+    width: 40%; 
 }
 
 /* Project Overview */
@@ -220,8 +225,8 @@
 
 /* THE BLOB */
 .blob {
-    fill: rgba(255, 199, 0, 0.2);
-    width: 10vmax;
+    fill: rgba(255, 199, 0, 0.1);
+    width: 15vmax;
     z-index: -1;
     animation: move 30s ease-in-out infinite;
     transform-origin: 50% 50%;
