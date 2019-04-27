@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/portfolio2.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="portfolio.js"></script>
@@ -52,15 +52,42 @@
               <a href="https://www.linkedin.com/in/aliya-rajwani-b1466117b/" target="_blank" class="linkedin"><img src="assets/linkedin.svg"></a>
               <a href="https://github.com/rajwanialiya" target="_blank" class="github"><img src="assets/github.svg"/></a>
               <a href="mailto:rajwani.aliya@gmail.com" target="_blank" class="email"><img src="assets/email.svg"/></a>
-              <p class="text">Scrolldown</p>
+              <img class="mouse" src="assets/mouse.svg"/>
+              <!-- <p class="text">Scrolldown</p> -->
+              <svg class="line" height="210" width="40">
+                  <line x1="20" y1="0" x2="20" y2="90"/>
+                  <line x1="20" y1="90" x2="13" y2="82"/>
+                  <line x1="20" y1="90" x2="27" y2="82"/>                
+              </svg>
             </div>
             <ul id="scene">
-              <li class="layer" data-depth="0.4">
-                <img id="moon" src="assets/blue2.svg">
+              <li class="layer" data-depth="0.3">
+                <img id="moon" src="assets/circle.svg">
+              </li>
+              <li class="layer" data-depth="0.05" id="firstCircle">
+                  <span class="circle1"></span>
+              </li>
+              <li class="layer" data-depth="-0.4" id="secondCircle">
+                    <span class="circle2"></span>
+              </li>
+              <li class="layer" data-depth="0.5" id="thirdCircle">
+                    <span class="circle3"></span>
+              </li>
+              <li class="layer" data-depth="-0.1" id="fourthCircle">
+                    <span class="circle4"></span>
+              </li>
+              <li class="layer" data-depth="0.2" id="fifthCircle">
+                    <span class="circle5"></span>
+              </li>
+              <li class="layer" data-depth="0" id="sixthCircle">
+                    <span class="circle6"></span>
+              </li>
+              <li class="layer" data-depth="-0.2" id="seventhCircle">
+                    <span class="circle7"></span>
               </li>
               <li class="layer" data-depth="0.1">
                 <h1 id="text"> Hi there, it's Aliya</h1>
-                <h2> I'm a Systems Design Engineering student at the University of Waterloo and an aspiring front-end developer. I'm interested in</h2>
+                <h2> I'm a Systems Design Engineering student at the University of Waterloo and an aspiring developer. I'm interested in</h2>
                 <span id="typed"></span>   
               </li>
             </ul>   

@@ -33,42 +33,62 @@
 .projectNav{
     display: flex; 
     flex-direction: row; 
+    width: 6vh; 
 }
 
-.projectNav p{
+.projectNav p, .resume, .getInTouch, .about, .returnHome{
     margin: 0; 
     text-transform: uppercase; 
     margin-right: 20px; 
 }
 
-.projectNav a:hover{
+.projectNav a:hover, .resume:hover, .about:hover, .getInTouch:hover, .returnHome:hover{
     text-decoration: none !important; 
     color: rgb(0, 142, 65);  
 }
 
-.projectNav a{
+.projectNav a, .resume, .about, .getInTouch, .returnHome{
     color: grey; 
     transition: color 0.5s ease-in-out; 
 }
 
-.projectTitle{
+.projectTitle {
     text-transform: uppercase; 
-    width: 50vh; 
-    padding: 75px; 
+    width: 43vh; 
+    bottom: -10px; 
 }
 
-.projectTitle, .projectNav{
-    transform: rotate(90deg);
+/* .projectNav, .resume, .getInTouch, .about, .returnHome */
+.projectTitle , .projectNav{
+    transform: rotate(-90deg);
 }
 
 .home{
     position: relative; 
-    top: -12vh; 
-    width: 40%; 
+    top: 13vh;  
+    width: 30%; 
 }
 
 .home img{
     width: 100%; 
+}
+
+.new{
+    width: 100vh; 
+    display: none;  
+    transform: rotate(-90deg); 
+    position: absolute; 
+    top: -10vh;
+}
+
+.close{
+    visibility: hidden;
+    position: relative; 
+    bottom: -29vh;  
+}
+
+.new p{
+    margin-bottom: 0; 
 }
 
 /* scroll progress */ 
@@ -86,7 +106,7 @@
     transform: rotate(90deg);
     position: fixed;
     top: 49.6vh;
-    left: -37.6vh;
+    left: -37.65vh;
     overflow-y: hidden;    
     margin: 0; 
     z-index: 2; 
@@ -228,7 +248,7 @@
     fill: rgba(255, 199, 0, 0.1);
     width: 15vmax;
     z-index: -1;
-    animation: move 30s ease-in-out infinite;
+    animation: move 19s ease-in-out infinite;
     transform-origin: 50% 50%;
     position: absolute; 
 }

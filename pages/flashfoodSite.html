@@ -13,11 +13,14 @@
 <body>
     <nav id="sidebar">
         <p class="projectTitle">Flashfood Main Website</p>
-        <a class="home" href="../portfolio3.html"><img src="../assets/homeThick.svg"></a>
+        <a class="home"><img src="../assets/menu.svg"></a>
+        <!-- <a class="home" href="../portfolio3.html"><img src="../assets/homeThick.svg"></a> -->
+        <img class="close" src="../assets/close.svg">
         <div class="projectNav">
             <a href=""><p>Prev</p></a>
             <a href=""><p>Next</p></a>
         </div>
+        <div class="new"><a class="returnHome" href="../portfolio3.html"><p>Home</p></a><a class="about" href=""><p>About</p></a><a class="resume" href=""><p>Resume</p></a><a class="getInTouch" href="mailto:rajwani.aliya@gmail.com"><p>Get In Touch</p></a></div>
     </nav>
     <div class="side">
         <div class="progress-container">
@@ -128,8 +131,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    
+<!-- toggleNav.js -->
+    <script src="../toggleNav.js"></script>
+
+<!-- scroll progress bar -->
     <script>
-    // When the user scrolls the page, execute myFunction 
         window.onscroll = function() {myFunction()};
             
         function myFunction() {
