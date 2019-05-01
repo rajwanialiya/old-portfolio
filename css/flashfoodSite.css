@@ -66,12 +66,19 @@
 .home{
     position: relative; 
     top: 13vh;  
-    width: 30%; 
+    width: 45%; 
+    opacity: 0.7; 
 }
 
 .home img{
     width: 100%; 
 }
+
+/* .home:hover{
+    background: url("../assets/menuFill.svg"); 
+    background-size: 90%; 
+    background-repeat: no-repeat;  
+} */
 
 .new{
     width: 100vh; 
@@ -217,6 +224,18 @@
     width: 80%;  
 }
 
+.writing p{
+    font-weight: 300;
+}
+
+.writing h2{
+    font-weight: 500; 
+}
+
+.writing h4{
+    font-weight: 400; 
+}
+
 .columns{
     display: flex; 
     flex-direction: row; 
@@ -251,13 +270,246 @@
     animation: move 19s ease-in-out infinite;
     transform-origin: 50% 50%;
     position: absolute; 
+    display: none; 
 }
 
 @keyframes move {
-  0%   { transform: scale(1)   translate(10px, -30px); }
-  38%  { transform: scale(0.8, 1) translate(80vw, 20vh) rotate(160deg); }
-  40%  { transform: scale(0.8, 1) translate(80vw, 20vh) rotate(160deg); }
-  78%  { transform: scale(1.3) translate(15vw, 10vh) rotate(-30deg); }
-  80%  { transform: scale(1.3) translate(15vw, 10vh) rotate(-30deg); }
+  0%   { transform: scale(1)   translate(10px, -80px); }
+  38%  { transform: scale(0.8) translate(80vw, 20vh) rotate(160deg); }
+  40%  { transform: scale(0.8) translate(80vw, 20vh) rotate(160deg); }
+  78%  { transform: scale(0.5) translate(15vw, 8vh) rotate(-30deg); }
+  90%  { transform: scale(0.9) translate(15vw, 10vh) rotate(-30deg); }
   100% { transform: scale(1)   translate(10px, -30px); }
 }
+
+/* Competitive Analysis */
+@import "compass/css3";
+
+* {
+  @include box-sizing(border-box); 
+}
+
+section{
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.module{
+    margin-top: 1%; 
+    width: 100%; 
+    min-height: 200px;
+    display: flex;   
+    overflow: hidden; 
+    margin-bottom: 1%; 
+    box-shadow: 0 1px 3px rgba(black, 0.2);
+}
+
+#column{
+    flex-direction: column; 
+}
+
+#row{
+    flex-direction: row; 
+}
+
+#space{
+    margin-bottom: 10px; 
+}
+
+.paragraphLeft{
+    width: 50%; 
+    margin-right: 10px;
+    padding-right: 5px;  
+}
+
+.paragraphRight{
+    width: 50%; 
+    padding-right: 5px;  
+}
+
+.images{
+   display: flex; 
+   flex-direction: row;  
+}
+
+.image1, .image2, .imageStack{
+    width: 50%;  
+}
+
+.image1 img, .image2 img, .imageStack img{
+    width: 100%;
+}
+
+.imageStack{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.image1, .imageStack{
+    margin-right: 10px; 
+}
+
+.module p{
+    padding-top: 15px; 
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1.4s ease forwards;
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+/* Visual Styles */
+.VisualStyles{
+    display: flex; 
+    flex-direction: row; 
+    width: 100%; 
+    align-items: stretch; 
+    justify-content: space-between;  
+}
+
+.VisualStyles div{
+    border-right: 1px solid lightgray; 
+    width: 33%; 
+}
+
+.image{
+    justify-content: center;
+    display: flex; 
+}
+
+.colours{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.colours section{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+}
+
+.colours div{
+    width: 7vh; 
+    min-height: 7vh;  
+    border: 1px solid lightslategray; 
+    border-radius: 5px;  
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+.letters{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+}
+
+.letters h1{
+    font-size: 78px;
+    font-weight: 600;  
+}
+
+.buttons{
+    padding-left: 20px; 
+    justify-content: center;
+}
+
+.buttons p{
+    margin-bottom: 2px; 
+}
+
+.inactive, .active{
+    padding: 1.0625em 1.875em; 
+    line-height: 10px; 
+    border-radius: 6px; 
+    font-weight: 300; 
+    margin-bottom: 10px; 
+    width: auto; 
+
+}
+
+.inactive{
+    color: white; 
+    background-color: #333; 
+    
+}
+
+.inactive:hover{
+    background-color: #248f41; 
+}
+
+.active{
+    background-color: #248f41; 
+    color: white; 
+}
+
+/* Colour Blocks */
+.green{
+    background-color: #248f41
+}
+
+.lightgrey{
+    background-color: #777777
+}
+
+.darkgrey{
+    background-color: #333333
+}
+
+.black{
+    background-color: black; 
+}
+
+.white{
+    background-color: white; 
+}
+
+.yellow{
+    background-color: rgb(255, 201, 0)
+}
+
+/* Wireframes & Sketches */
+.wireframes{
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+
+.uploads{
+    display: flex; 
+    flex-direction: row; 
+}
+
+.uploads img{
+    width: 100%;  
+}
+
+.uploads img:hover{
+    opacity: 0.3; 
+}
+
+/* Outcome */
+.outcome{
+    display: flex; 
+    flex-direction: column; 
+}
+
+.outcome div{
+    padding-bottom: 20px; 
+}
+
+.vid{
+    width: 100%; 
+}
+

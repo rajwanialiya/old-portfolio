@@ -70,7 +70,7 @@
 
 #scene{
     overflow:hidden; 
-    height: 100vh;
+    height: 100vh; 
 }
 
 #moon{
@@ -115,32 +115,49 @@
 .scroll{
     display: flex; 
     flex-direction: column; 
+    justify-content: center; 
+    align-content: center; 
+    align-items: center; 
     position: fixed; 
-    width: 90vh;
-    top: 64vh;
-    margin-left: 8vh;
+    width: 10vh;
+    top: 58vh;
+    margin-left: 6vh;
     z-index: 1; 
 }
 
 .linkedin, .email{
-    width: 3%; 
+    width: 30%; 
+}
+
+.mouse{
+    width: 37%;  
+    margin-bottom: 24px; 
 }
 
 .github{
-    width: 5%; 
+    width: 43%;
 }
 
-.linkedin img, .email img{
+.email img{
     width: 100%; 
-    margin-bottom: 20px; 
+    margin-bottom: 24px; 
 }
+
+.linkedin img{
+    width: 100%; 
+    margin-bottom: 19px; 
+}
+
 
 .github img{
     width: 100%; 
-    margin-bottom: 20px; 
-    margin-left: -6px; 
+    margin-bottom: 24px; 
 }
 
+.line line{
+    stroke-width: 2px; 
+    stroke: black; 
+}
 .text{ 
     font-size: 16px;
     font-weight: 300;
@@ -232,7 +249,7 @@
     padding: 50px; 
     padding-bottom: 0; 
     overflow-x: hidden; 
-    height: 100vh; 
+    height: 80vh; 
 }
 
 .project{

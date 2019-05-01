@@ -13,14 +13,14 @@
 <body>
     <nav id="sidebar">
         <p class="projectTitle">Flashfood Main Website</p>
-        <a class="home"><img src="../assets/menu.svg"></a>
-        <!-- <a class="home" href="../portfolio3.html"><img src="../assets/homeThick.svg"></a> -->
+        <a class="home"><img src="../assets/menuEmpty.svg"></a>
+        <!-- <a class="home" href="../index.html"><img src="../assets/homeThick.svg"></a> -->
         <img class="close" src="../assets/close.svg">
         <div class="projectNav">
             <a href=""><p>Prev</p></a>
             <a href=""><p>Next</p></a>
         </div>
-        <div class="new"><a class="returnHome" href="../portfolio3.html"><p>Home</p></a><a class="about" href=""><p>About</p></a><a class="resume" href=""><p>Resume</p></a><a class="getInTouch" href="mailto:rajwani.aliya@gmail.com"><p>Get In Touch</p></a></div>
+        <div class="new"><a class="returnHome" href="../index.html"><p>Home</p></a><a class="about" href=""><p>About</p></a><a class="resume" href=""><p>Resume</p></a><a class="getInTouch" href="mailto:rajwani.aliya@gmail.com"><p>Get In Touch</p></a></div>
     </nav>
     <div class="side">
         <div class="progress-container">
@@ -44,7 +44,9 @@
         <div class="overview">
             <div class="role">
                 <p>Role</p>
-                <h6>My Role</h6>
+                <h6>UX Developer</h6>
+                <h6>Worked with Design Lead</h6>
+                <h6>Guidance by CTO</h6>
             </div>
             <div class="timeline">
                 <p>Timeline</p>
@@ -88,9 +90,10 @@
             <div>
                 <h2>Requirements</h2>
                 <div class="blob">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+                    <span class="circle1"></span>
+                    <!-- <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
                         <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"></path>
-                    </svg>
+                    </svg> -->
                 </div>
                 <p>After reviewing the goals and project limitations, a list of requirements to be met by the redesign, was drafted. </p>
                 <ul class="requirements"> 
@@ -99,29 +102,90 @@
                     <li>Must encourage visitors to input their contact information (email address) into one of the available fields to optimize conversion rates</li>
                     <li>Information must be presented in a clear and concise manner to retain the visitor’s attention, as the existing solution is dense and can be overwhelming</li>
                     <li>The overall web experience should reflect the company’s culture and commitment to positive global change</li>
-                    <li>Should encourage visitors to continue navigating through the website (buttons lead to other sections of site)??</li>
+                    <li>Must reduce friction points and provide multiple entry points to all webpages to encourage the user’s journey</li>
                 </ul>
             </div>
             <!-- Section 3 -->
-            <h2>Research</h2>
+            <h2>Competitive Analysis</h2>
+            <p>In order to gain a better sense of what a website that met the above requirements looked like, I analyzed and compared aspects of existing websites that aimed to meet similar objectives. This included websites that fulfilled the purposes of informing users of a product or service being offered and converting web visitors, and websites of growing companies. The following are some of the successful web elements from which inspiration was drawn. </p>
+            <section>
+                <div class="module"  id="column">
+                    <div class="images">
+                        <div class="image1"><img src="../assets/hero.png"></div>
+                        <div class="image2"><img src="../assets/hero4.png"></div>
+                    </div>
+                    <p> Three similar aspects among the above designs that were incorporated into the redesign are the call-to-action buttons (CTAs) in both the navbar and header, the full-screen size of the hero image and the position of the header text.</p> 
+                </div>
+                <div class="module" id="row">
+                    <p class="paragraphLeft"> Uber directs its user segments to the appropriate sections of their website at the very beginning of the user’s journey. This is done with clear and concise copy, large header text and bright CTAs. When creating wireframes for the redesign, a similar layout was considered to target the two groups of Flashfood users; Shoppers and Vendors. </p> 
+                    <div class="image2"><img src="../assets/User Segmentation.png"></div>
+                </div>
+                <div class="module" id="column">
+                    <div class="images">
+                        <p class="paragraphLeft">Row and column layouts were used to organize information in a digestible manner. A similar structure to the below examples were used in the updated Flashfood website (image, header text, paragraph text, CTA).</p> 
+                        <div class="image2" id="space"><img src="../assets/main2.png"></div>
+                    </div>
+                    <div class="images">
+                        <div class="imageStack">
+                            <img src="../assets/main3.png">
+                            <img src="../assets/main.png">
+                        </div>
+                        <div class="image2"><img src="../assets/main4.png"></div>
+                    </div>
+                </div>
+            </section>
             <!-- Section 4 -->
             <h2>Design</h2>
-            <p> BEFORE AND AFTER VIDS</p>
-            <h4>Principles</h4>
-            <div class="principles">
-                <h6>Designing for Consistency</h6>
-                <h6>Digestible</h6>
-                <h6>Responsive Design</h6>
-                <h6>Principle</h6>
-                <h6>Principle</h6>
-                <h6>Principle</h6>
-            </div>
             <h4>Visual Style</h4>
-            <p> INCLUDE BUTTON SIZES, FONTS, COLOURS, IMAGES</p>
-            <h4>Wireframes</h4>
+            <div class="VisualStyles">
+                <div class="letters">
+                    <h1>Ab</h1>
+                    <h2>SF Pro Text</h2>
+                </div>
+                <div class="buttons">
+                    <p>Inactive State</p>
+                    <button class="inactive">Button</button>
+                    <p>Active State</p> 
+                    <button class="active">Button</button>
+                </div>
+                <div class="image"><img src="../assets/visualStyles.svg"/></div>
+                <div class="colours">
+                    <section> 
+                        <div class="green"></div>
+                        <div class="lightgrey"></div>
+                        <div class="darkgrey"></div>
+                    </section>
+                    <section>
+                        <div class="white"></div>
+                        <div class="black"></div>
+                        <div class="yellow"></div>
+                    </section>
+                </div>
+            </div>
+            
+            <h4 class="wireframes">Wireframes & Planning</h4>
+            <div class="uploads">
+                <div><img src="../assets/wireframe.jpg"></div>
+                <div><img src="../assets/nav.jpg"></div>
+                <div><img src="../assets/food waste.jpg"></div>
+            </div>
             <!-- Section 5 -->
             <h2>Back-End Challenges</h2>
             <h4>Forms</h4>
+            <!-- Section 6 -->
+            <!-- <h2>Outcome</h2>
+            <div class="outcome">
+                <div class="vid">
+                    <video width="100%" height="auto" autoplay muted loop>
+                            <source src="../assets/Before.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="vid">
+                    <video width="100%" height="auto" autoplay muted loop>
+                            <source src="../assets/After.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div> -->
 
         </div>
     </div>  
@@ -144,5 +208,46 @@
             var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
         }
+
+        // elements appear on scroll
+        // (function($) {
+        //     $.fn.visible = function(partial) {
+    
+        //     var $t            = $(this),
+        //         $w            = $(window),
+        //         viewTop       = $w.scrollTop(),
+        //         viewBottom    = viewTop + $w.height(),
+        //         _top          = $t.offset().top,
+        //         _bottom       = _top + $t.height(),
+        //         compareTop    = partial === true ? _bottom : _top,
+        //         compareBottom = partial === true ? _top : _bottom;
+        
+        //     return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+        //     };
+        // })(jQuery);
+
+        // var win = $(window);
+        // var allMods = $(".module");
+
+        // allMods.each(function(i, el) {
+        //     var el = $(el);
+        //     if (el.visible(true)) {
+        //         el.addClass("already-visible"); 
+        //     } 
+        // });
+
+        // win.scroll(function(event) {
+        //     allMods.each(function(i, el) {
+        //     var el = $(el);
+        //     if (el.visible(true)) {
+        //         el.addClass("come-in"); 
+        //     } 
+        //     });
+        // });
+
+        // speed up vid
+        var vid = document.querySelector('video');
+        vid.playbackRate = 1.5;
+        console.log(vid.playbackRate); 
     </script>
 </body>

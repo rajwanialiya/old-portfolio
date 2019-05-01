@@ -117,16 +117,16 @@
 }
 
 .circle1 {
-    height: 280px;
-    width: 280px;
+    height: 310px;
+    width: 310px;
     background-color: rgb(150, 232, 226);
     border-radius: 50%;
     display: inline-block; 
 }
 
 #firstCircle{
-    top: 59% !important; 
-    left: 18% !important; 
+    top: 54% !important; 
+    left: 16% !important; 
 }
 
 .circle2 {
@@ -169,8 +169,8 @@
 }
 
 .circle5 {
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     background-color: rgb(239, 205, 215);
     border-radius: 50%;
     display: inline-block; 
@@ -375,7 +375,7 @@
 
 .textOverlay{
     position: absolute; 
-    top: 168vh; 
+    top: 169vh; 
     left: 16%; 
     visibility: hidden;
     font-size: 2rem;  
@@ -383,7 +383,7 @@
 
 .textOverlay2{
     position: absolute; 
-    top: 268vh; 
+    top: 269vh; 
     left: 73%; 
     visibility: hidden;
     font-size: 2rem;  
@@ -391,7 +391,7 @@
 
 .textOverlay3{
     position: absolute; 
-    top: 368vh; 
+    top: 369vh; 
     left: 16%; 
     visibility: hidden;
     font-size: 2rem;  
