@@ -11,16 +11,23 @@
     <title>Flashfood Website</title>
 </head>
 <body>
+    <div class="darken"></div>
+    <a class="back" href="../index.html"><img class="arrow" src="../assets/arrow.svg"></a>
     <nav id="sidebar">
         <p class="projectTitle">Flashfood Main Website</p>
         <a class="home"><img src="../assets/menuEmpty.svg"></a>
         <!-- <a class="home" href="../index.html"><img src="../assets/homeThick.svg"></a> -->
         <img class="close" src="../assets/close.svg">
         <div class="projectNav">
-            <a href=""><p>Prev</p></a>
-            <a href=""><p>Next</p></a>
+            <a href="" class="next" style="transform: rotate(-90deg)"><img class="arrow" src="../assets/arrow.svg"></a>
+            <a href="" class="prev" style="transform: rotate(90deg)"><img class="arrow" src="../assets/arrow.svg"></a>
         </div>
-        <div class="new"><a class="returnHome" href="../index.html"><p>Home</p></a><a class="about" href=""><p>About</p></a><a class="resume" href=""><p>Resume</p></a><a class="getInTouch" href="mailto:rajwani.aliya@gmail.com"><p>Get In Touch</p></a></div>
+        <div class="new">
+            <a class="returnHome" href="../index.html"><p>Home</p></a>
+            <a class="about" href="../index.html"><p>About</p></a>
+            <a class="resume" href=""><p>Resume</p></a>
+            <a class="getInTouch" href="mailto:rajwani.aliya@gmail.com"><p>Let's Talk</p></a>
+        </div>
     </nav>
     <div class="side">
         <div class="progress-container">
@@ -35,7 +42,7 @@
                 <p>Web Development & UI/UX</p>
             </div>
             <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>As Flashfood grew to reach a wider audience, its brand evolved and features were added to the app. My task for this project was to work with the Head of Product & Design and company's CTO to design and implement a scalable updated main website that reflected these changes.</p>
             </div>
         </div>
         <div class="logoContainer"> 
@@ -90,10 +97,10 @@
             <div>
                 <h2>Requirements</h2>
                 <div class="blob">
-                    <span class="circle1"></span>
-                    <!-- <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+                    <!-- <span class="circle1"></span> -->
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
                         <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"></path>
-                    </svg> -->
+                    </svg>
                 </div>
                 <p>After reviewing the goals and project limitations, a list of requirements to be met by the redesign, was drafted. </p>
                 <ul class="requirements"> 
@@ -106,7 +113,7 @@
                 </ul>
             </div>
             <!-- Section 3 -->
-            <h2>Competitive Analysis</h2>
+            <h2 style="padding-top: 12px">Competitive Analysis</h2>
             <p>In order to gain a better sense of what a website that met the above requirements looked like, I analyzed and compared aspects of existing websites that aimed to meet similar objectives. This included websites that fulfilled the purposes of informing users of a product or service being offered and converting web visitors, and websites of growing companies. The following are some of the successful web elements from which inspiration was drawn. </p>
             <section>
                 <div class="module"  id="column">
@@ -135,7 +142,7 @@
                 </div>
             </section>
             <!-- Section 4 -->
-            <h2>Design</h2>
+            <h2 style="padding-top: 12px">Design</h2>
             <h4>Visual Style</h4>
             <div class="VisualStyles">
                 <div class="letters">
@@ -164,14 +171,43 @@
             </div>
             
             <h4 class="wireframes">Wireframes & Planning</h4>
-            <div class="uploads">
+            <div class="row">
+                    <div class="column" onclick="openTab('b1');">
+                        <img src="../assets/wireframe.jpg"> 
+                    </div>
+                    <div class="column" onclick="openTab('b2');">
+                        <img src="../assets/nav.jpg">
+                    </div>
+                    <div class="column" onclick="openTab('b3');">
+                        <img src="../assets/food waste.jpg">
+                    </div>
+                  </div>
+                  
+                  <!-- Full-width columns: (hidden by default) -->
+                  <div id="b1" class="containerTab" style="display:none;background: #77777756">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img class="open" src="../assets/wireframe.jpg">
+                  </div>
+                  
+                  <div id="b2" class="containerTab" style="display:none;background:#77777756">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img class="open" src="../assets/nav.jpg">
+                  </div>
+                  
+                  <div id="b3" class="containerTab" style="display:none;background: #77777756">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img class="open" src="../assets/food waste.jpg">
+                  </div>
+                  
+            <!-- <div class="uploads">
                 <div><img src="../assets/wireframe.jpg"></div>
                 <div><img src="../assets/nav.jpg"></div>
                 <div><img src="../assets/food waste.jpg"></div>
-            </div>
+            </div> -->
             <!-- Section 5 -->
-            <h2>Back-End Challenges</h2>
-            <h4>Forms</h4>
+            <h2>Implementation and Result</h2>
+            <p>The updated design has been implemented and deployed, and is available at <a href="https://www.flashfood.com/">www.flashfood.com</a>. A list of additional features that could further improve users' experiences was drafted as the project's deadline approached, and are still being implemented. Overall, through the website redesign, all the initial objectives were met.</p>
+            <p>To determine </p>
             <!-- Section 6 -->
             <!-- <h2>Outcome</h2>
             <div class="outcome">
@@ -249,5 +285,16 @@
         var vid = document.querySelector('video');
         vid.playbackRate = 1.5;
         console.log(vid.playbackRate); 
+
+        // expanding wireframes
+        
+        function openTab(tabName) {
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
     </script>
 </body>

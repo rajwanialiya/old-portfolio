@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/flashfoodSite.css" />
+    <link rel="stylesheet" type="text/css" href="../css/counter.css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <title>Food Waste Counter</title>
+</head>
+<body>
+    <div class="darken"></div>
+    <a class="back" href="../index.html"><img class="arrow" src="../assets/arrow.svg"></a>
+    <nav id="sidebar">
+        <p class="projectTitle">Food Waste Counter</p>
+        <a class="home"><img src="../assets/menuEmpty.svg"></a>
+        <!-- <a class="home" href="../index.html"><img src="../assets/homeThick.svg"></a> -->
+        <img class="close" src="../assets/close.svg">
+        <div class="projectNav">
+            <a href="" class="next" style="transform: rotate(-90deg)"><img class="arrow" src="../assets/arrow.svg"></a>
+            <a href="" class="prev" style="transform: rotate(90deg)"><img class="arrow" src="../assets/arrow.svg"></a>
+        </div>
+        <div class="new">
+            <a class="getInTouch" href="mailto:rajwani.aliya@gmail.com"><p>Let's Talk</p></a>
+            <a class="resume" href=""><p>Resume</p></a>
+            <a class="about" href="../index.html"><p>About</p></a>
+            <a class="returnHome" href="../index.html"><p>Home</p></a>  
+        </div>
+    </nav>
+    <div class="side">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>  
+    </div>
+    <div class="header"></div>
+    <div id="caseStudy">
+        <div class="intro">
+            <div class="title">
+                <h2>Food Waste Counter</h2>
+                <p>Web Development & Back-End</p>
+                <!-- <a href="https://www.flashfood.com/en/food-waste" class="view">View Project</a> -->
+            </div>
+            <div class="description">
+                <p>My task was to create a count-up to display the amount of food waste diverted from landfills by Flashfood users, in real-time. This project involved pulling statistics from the Flashfood database to update the counter regularly, creating an API endpoint to reference when embedding the counter, and animating the count-up to increase interactivity.</p>
+            </div>
+        </div>
+        <div class="logoContainer"> 
+            <img class="logo" src="../assets/logo.png"/>
+        </div>
+        <div class="overview">
+            <div class="role">
+                <p>Role</p>
+                <h6>Full-Stack Developer</h6>
+                <h6>Worked with Dev Team</h6>
+                <h6>Guidance by CTO</h6>
+            </div>
+            <div class="timeline">
+                <p>Timeline</p>
+                <h6>1 week</h6>
+            </div>
+            <div class="challenge">
+                <p>Challenge</p>
+                <h6>Live Food Waste Count-up</h6>
+            </div>
+            <div class="tools">
+                <p>Tools</p>
+                <h6>JavaScript SQL</h6>
+                <h6>HTML CSS Vue</h6>
+                
+            </div>
+        </div>
+        <div class="writing">
+            <!-- Section 1 -->
+            <h2>Project Breakdown</h2>
+                    <h4>Pull real-time statistics from the Flashfood database</h4>
+                    <p>A record of order bag weights is stored in the Flashfood database, which updates every 30 minutes. This equates to the total amount of food waste diverted from landfills by the app's users.</p>
+              
+                    <h4>Create the count-up animation</h4> 
+                    <p>To create an animated counter while displaying accurate statistics, I subtracted a value from the total weight diverted, and increased this value by smaller increments over a given time, until the value displayed was the total weight diverted.</p>  
+                    
+                    <div class="feature">
+                        <p class="what">Unique user experience</p>
+                        <ul>
+                            <li>By subtracting a random value between 700 and 1000 from the total weight diverted, I ensured that a unique start number is displayed everytime the page is loaded</li>
+                            <li>To display the data in a more interesting way, for every increase interval (1.2s), I added a random value between 10 and 20 until the start value matched the total weight diverted</li>
+                        </ul> 
+                    </div>
+                    <div class="feature">
+                        <p>Digestible change</p>
+                        <ul>
+                            <li>To display the data in a way that was easy to understand, the values shown were rounded to two decimal places</li>
+                        </ul>  
+                    </div>
+                    <div class="feature">
+                        <p>Noticeable and digestible animations</p>
+                        <ul>
+                            <li>To ensure the counter displayed the data in a way that resonated with the user, I created a 1s delay before the start of the animation, and incremented the values every 120s. These values were chosen based on the average amount of time spent on the website page and common user movement.</li>
+                        </ul>
+                    </div>
+                    
+                    <h4>Create an additional endpoint in the Flashfood API to embed the counter</h4>      
+                    <p>To access the data in Flashfood’s API on the main website, an additional endpoint was required.</p>
+
+                    <h4>Style the new feature</h4>      
+                    <p>The final step in this project was to style to the feature to match the aesthetic of the rest of the website. To do this I removed the report's border and changed its font, colour, size and position</p>
+                
+            
+            <!-- Section 2 -->
+            <div>
+                <h2>Next Steps</h2>
+                <div class="blob">
+                    <!-- <span class="circle1"></span> -->
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+                        <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"></path>
+                    </svg>
+                </div>
+                <p>After reviewing the goals and project limitations, a list of requirements to be met by the redesign, was drafted. </p>
+                <ul class="requirements"> 
+                    <li>Must be responsive and accessible on multiple devices spanning from desktop to mobile</li>
+                    <li>Must be available in both French and English</li>
+                    <li>Must encourage visitors to input their contact information (email address) into one of the available fields to optimize conversion rates</li>
+                    <li>Information must be presented in a clear and concise manner to retain the visitor’s attention, as the existing solution is dense and can be overwhelming</li>
+                    <li>The overall web experience should reflect the company’s culture and commitment to positive global change</li>
+                    <li>Must reduce friction points and provide multiple entry points to all webpages to encourage the user’s journey</li>
+                </ul>
+            </div>
+        
+
+<!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+<!-- toggleNav.js -->
+    <script src="../toggleNav.js"></script>
+
+<!-- scroll progress bar -->
+    <script>
+        window.onscroll = function() {myFunction()};
+            
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+        // elements appear on scroll
+        // (function($) {
+        //     $.fn.visible = function(partial) {
+    
+        //     var $t            = $(this),
+        //         $w            = $(window),
+        //         viewTop       = $w.scrollTop(),
+        //         viewBottom    = viewTop + $w.height(),
+        //         _top          = $t.offset().top,
+        //         _bottom       = _top + $t.height(),
+        //         compareTop    = partial === true ? _bottom : _top,
+        //         compareBottom = partial === true ? _top : _bottom;
+        
+        //     return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+        //     };
+        // })(jQuery);
+
+        // var win = $(window);
+        // var allMods = $(".module");
+
+        // allMods.each(function(i, el) {
+        //     var el = $(el);
+        //     if (el.visible(true)) {
+        //         el.addClass("already-visible"); 
+        //     } 
+        // });
+
+        // win.scroll(function(event) {
+        //     allMods.each(function(i, el) {
+        //     var el = $(el);
+        //     if (el.visible(true)) {
+        //         el.addClass("come-in"); 
+        //     } 
+        //     });
+        // });
+
+        // speed up vid
+        var vid = document.querySelector('video');
+        vid.playbackRate = 1.5;
+        console.log(vid.playbackRate); 
+    </script>
+</body>

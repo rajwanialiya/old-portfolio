@@ -2,6 +2,10 @@
     padding: 0; 
     margin: 0 ; 
 }
+
+/* body{
+    background-color: rgb(243, 247, 253); 
+} */
 /* NAVBAR */ 
 .navbar{
     padding: 30px 40px; 
@@ -169,9 +173,10 @@
 }
 
 .circle5 {
-    height: 170px;
-    width: 170px;
-    background-color: rgb(239, 205, 215);
+    height: 200px;
+    width: 200px;
+    /* background-color: rgb(239, 205, 215); */
+    background-color: rgba(185, 156, 228, 0.4 ); 
     border-radius: 50%;
     display: inline-block; 
 }
@@ -182,8 +187,8 @@
 }
 
 .circle6 {
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     background-color: rgb(159, 198, 229);
     border-radius: 50%;
     display: inline-block; 
@@ -365,7 +370,7 @@
 }
 
 .image img:hover{ 
-    opacity: 0.3; 
+    opacity: 0.4; 
 }
 
 .image a{
@@ -441,7 +446,7 @@
     color: black; 
     padding: 20px 30px; 
     position: relative;
-    left: -23%; 
+    left: -14vh; 
     margin-bottom: 0; 
 }
 
@@ -449,16 +454,16 @@
     background-color: rgb(152, 213, 229);  
     opacity: 0.8; 
     color: black; 
-    padding: 20px; 
+    padding: 20px 30px;
     position: relative;
-    right: -23%; 
+    left: 16vh; 
 }
 
 .visit{
     justify-content: flex-end;
     align-items: flex-end;
     display: flex;
-    width: 35%; 
+    width: 4.8vh;
 }
 
 
@@ -467,11 +472,15 @@
     width: 100%; 
 }
 
+.visit img:hover, .visit2 img:hover{
+    opacity: 0.5;
+}
+
 .visit2{
     justify-content: flex-start;
     align-items: flex-start;
     display: flex;
-    width: 35%; 
+    width: 4.8vh; 
 }
 
 
@@ -481,7 +490,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     width: 100%;
-    margin-left: -30%;
+    margin-left: -7vw;
     height: 10%;
 }
 
@@ -491,7 +500,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    margin-right: -30%;
+    margin-right: -7vw;
     height: 10%;
 }
 
@@ -579,7 +588,9 @@
 
  }
 
-
+.purple{
+    background-color: purple !important;  
+}
 
 /* Extra large devices (large desktops)*/
 /* No media query since the extra-large breakpoint has no upper bound on its width*/

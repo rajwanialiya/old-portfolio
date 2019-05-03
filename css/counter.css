@@ -1,0 +1,54 @@
+
+/* header */
+.header{
+    background: rgb(0, 142, 65) url("../assets/counterHeader.svg"); 
+    background-size: cover; 
+    background-position: 0px 550px; 
+    height: 50vh; 
+}
+
+.fill{
+    height: 300vh;  
+}
+
+.progress-bar{
+    margin: 0; 
+    height: 100%;
+    background: rgb(204, 0, 0);
+    width: 8%;
+}
+  
+.blob{
+    fill: rgb(204, 0, 0); 
+    opacity: 0.1; 
+}
+
+.view{
+    color: #990000; 
+    padding-top: 0; 
+    font-weight: 500; 
+}
+
+.view:hover{
+    color: #333; 
+    text-decoration: none; 
+}
+
+.feature{
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    justify-content: space-between; 
+}
+
+.feature ul{
+    width: 65%; 
+}
+
+.feature p{
+    font-weight: 400; 
+}
+
+.projectTitle{
+    width: 36.5vh;
+}
