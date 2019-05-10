@@ -14,6 +14,7 @@
     position: fixed; 
     width: 100%; 
     z-index: 100; 
+    visibility: visible; 
 }
 
 .bg-light{
@@ -42,6 +43,20 @@
     padding-left: 6px;  
 }
 
+.nav-item::before{
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item:hover::before{
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+}
+
 .dropdown-menu{
     background-color: rgba(255,255,255, 0.2); 
     border-color: transparent; 
@@ -57,7 +72,10 @@
 
 .opacity{
     background-color: rgba(255,255,255, 1) !important;
- 
+}
+
+.display{
+    visibility: hidden;   
 }
 
 .green{
@@ -553,6 +571,17 @@
     font-size: 22px; 
 }
 
+ /* POPPING CIRCLES */
+ #pop1{
+    position: absolute; 
+    top: 180vh; 
+ }
+
+ #pop2{
+
+ }
+
+
 /* Extra small devices (portrait phones, less than 576px) */ 
 @media (max-width: 575.98px) { 
     .navbar{
@@ -588,9 +617,4 @@
 
  }
 
-.purple{
-    background-color: purple !important;  
-}
 
-/* Extra large devices (large desktops)*/
-/* No media query since the extra-large breakpoint has no upper bound on its width*/

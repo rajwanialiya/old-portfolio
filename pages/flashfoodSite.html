@@ -22,14 +22,14 @@
             <a href="" class="next" style="transform: rotate(-90deg)"><img class="arrow" src="../assets/arrow.svg"></a>
             <a href="" class="prev" style="transform: rotate(90deg)"><img class="arrow" src="../assets/arrow.svg"></a>
         </div>
-        <div class="new">
+        <div class="new transform">
             <a class="returnHome" href="../index.html"><p>Home</p></a>
             <a class="about" href="../index.html"><p>About</p></a>
             <a class="resume" href=""><p>Resume</p></a>
             <a class="getInTouch" href="mailto:rajwani.aliya@gmail.com"><p>Let's Talk</p></a>
         </div>
     </nav>
-    <div class="side">
+    <div class="side" id="top">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>  
@@ -205,9 +205,18 @@
                 <div><img src="../assets/food waste.jpg"></div>
             </div> -->
             <!-- Section 5 -->
-            <h2>Implementation and Result</h2>
-            <p>The updated design has been implemented and deployed, and is available at <a href="https://www.flashfood.com/">www.flashfood.com</a>. A list of additional features that could further improve users' experiences was drafted as the project's deadline approached, and are still being implemented. Overall, through the website redesign, all the initial objectives were met.</p>
-            <p>To determine </p>
+            <h2>Unexpected Challenge</h2>
+            <img style="width: 100%" src="../assets/ContactForm.png">
+            <p>A challenge I encountered while working on the contact form was the limit on submissions allowed by the platform being used to build and host the main website. The platform allowed for 5,000 form submissions before requiring a plan upgrade, and as a result didn’t offer a long-term or scalable solution to increased website conversion rates. </p>
+            <p>To overcome this challenge I intercepted the form submissions and validated the form data before creating an HTTP request via AJAX and returning a success or error message. The form data was then sent to the company’s customer service platform as a pending ticket, where the customer service team could easily respond to inquiries. 
+            </p>
+            <h2>Result</h2>
+            <p>The updated design has been implemented and deployed, and is available at <a class="link" target="_blank" href="https://www.flashfood.com/" style="color: #248f41;">www.flashfood.com</a>. A list of additional features that could further improve users' experiences was drafted as the project's deadline approached and are still being implemented. Overall, through the website redesign all the initial objectives and requirements were met.</p>
+            <p><b>Improve Brand Alignment</b>: To deem this goal achieved, I consulted the marketing and product design teams for feedback throughout the course of the project, and made the necessary changes.</p>
+            <p><b>Increase Website Conversion Rates</b>: Email and newsletter subscription rates increased after the updated website's launch. This means that website conversion rates successfully increased with the redesign of the site.</p>
+            <p><b>Increase Awareness</b>: The app's necessary information was presented in a clear and concise manner - all key information is presented in blurbs of less than three sentences</p>
+            <p><b>Build a Scaling Solution</b>: Closer to project's completion, Flashfood's services became available in over 100 additional grocery stores. I was able to simply upload a CSV file to add the necessary details to the Locations page. Additionally, as key features of the app were updated, changes were easily made to the appropriate website pages by members of the marketing team to reflect these modifications.</p>
+
             <!-- Section 6 -->
             <!-- <h2>Outcome</h2>
             <div class="outcome">
@@ -222,9 +231,20 @@
                     </video>
                 </div>
             </div> -->
+            <div class="top" style="width:100%; display:flex; flex-direction:row; justify-content: center">
+                <button href="#top" style="width: 20%"> ↑ Back to Top</button>
+            </div>
 
         </div>
-    </div>  
+    </div> 
+    <!-- <div class="footer">
+            <div class="footerIcons">
+                <a href="https://www.linkedin.com/in/aliya-rajwani-b1466117b/" target="_blank" class="linkedin"><img src="../assets/linkedin.svg"></a>
+                <a href="https://github.com/rajwanialiya" target="_blank" class="github"><img src="../assets/github.svg"/></a>
+                <a href="mailto:rajwani.aliya@gmail.com" target="_blank" class="email"><img src="../assets/email.svg"/></a>
+            </div> -->
+    </div>
+    
 
 <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

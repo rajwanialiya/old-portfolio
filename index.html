@@ -21,7 +21,6 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -46,6 +45,9 @@
           </ul>
         </div>
       </nav>
+      <!-- POPPING CIRCLES -->
+      <span id="pop1"></span>
+      <span id="pop2"></span>
       <div class="mainbag">
         <div>
             <div class="scroll">
@@ -111,11 +113,11 @@
                   </div>
                 </div>
                 <ul class="skills">
-                  <li>Responsive Design</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Skill</li>
-                  <li>Skill</li>
+                    <li>Responsive Design</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Ajax</li>
                 </ul>
                 <!-- <div class="moreDiv"><button onclick="window.location.href='pages/flashfoodSite.html'" class="more">Read More →</button></div> -->
               </div>
@@ -156,7 +158,7 @@
         <div class="portfolio">
             <div class="project"> 
                 <div class="image">
-                    <h2 class="textOverlay3">Read More</h2>
+                    <!-- <h2 class="textOverlay3">View Project</h2> -->
                     <img src="assets/mockup3.png">
                 </div>
                     <div class="description">
@@ -166,15 +168,14 @@
                         <p class="blurb">“Nailed It” is a collaboratively developed app that won second place at the TechXplore Healthcare & AI hackathon. The app uses open-source APIs and Python to perform early-stage diagnosis of anemia, illnesses stemmed from oxygen deprivation, and various infections by analyzing the discrepancy between a user's skin and nail colours
                           </p>
                         <div class="next">
-                          <a href="" class="visit2"><img src="assets/casestudy.svg"></a>
                           <a href="" target="_blank" class="visit"><img src="assets/github2.svg"></a>
                         </div>
                       </div>
                       <ul class="skills">
                         <li>Responsive Design</li>
+                        <li>JavaScript</li>
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>Skill</li>
                         <li>Skill</li>
                       </ul>
                       <!-- <div class="moreDiv"><button class="more">Read More →</button></div> -->
@@ -205,5 +206,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- popping bubbles -->    
+    <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      $("#js-hero img").css({
+          width: (0 + scroll/5) + "%"
+      })
+    })
+    </script>
+
   </body>
 </html>

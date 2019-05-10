@@ -12,6 +12,7 @@ img{
 
 /* arrow */
 .back{
+    background-color: white; 
     position: fixed;  
     top: 83vh; 
     left: 91vw; 
@@ -62,6 +63,13 @@ img{
     background-color: rgba(0, 0, 0, 0.5); 
     position: fixed; 
     z-index: 1000; 
+}
+
+.transform{
+    -webkit-transition: background-color 2s ease-in-out;
+    -moz-transition: background-color 2s ease-in-out;
+    -o-transition: background-color 2s ease-in-out;
+     transition: background-color 2s ease-in-out;
 }
 
 #sidebar{
@@ -166,6 +174,11 @@ img{
     transform: rotate(-90deg); 
     position: absolute; 
     top: -8.8vh;
+    -webkit-transition: all 2s ease;  
+    -moz-transition: all 2s ease;  
+    -o-transition: all 2s ease;  
+    -ms-transition: all 2s ease;  
+    transition: all 2s ease;
 }
 
 .close{
@@ -655,4 +668,60 @@ section{
     width: 100%; 
 }
 
+.link:hover{
+    text-decoration: none; 
+    font-weight: 400; 
+}
+
+/* footer */
+.footer{
+  background-color:#EAECEE;  
+  width: 100%; 
+  margin-left: 12vh;  
+  padding: 30px 50px; 
+}
+
+.linkedin, .github, .email{
+    width: 3.5%; 
+    margin-right: 20px;
+}
+
+.email{
+    position: relative; 
+    top: 5%; 
+}
+
+.footerIcons{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    width: 100%; 
+    margin-right: 12vh; 
+}
+
+.linkedin img, .github img, .email img{
+    width: 100%; 
+    opacity: 0.8; 
+}
+
+.linkedin img:hover, .github img:hover, .email img:hover{
+    opacity: 1; 
+}
+
+/* back to top */
+.top{
+    border:none; 
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+}
+.top button{
+    color: #C2C2C2;  
+    background-color: transparent;
+    font-size: 20px; 
+    border: none; 
+}
+
+.top button:hover{
+    color: #333;
+}
 
