@@ -32,7 +32,7 @@ img{
     padding: 32px; 
     top: 82.5vh; 
     left: 90.5vw; 
-    transition: 0.5s all cubic-bezier(.87, -.41, .19, 1.44), 1.5s right cubic-bezier(.87, -.41, .19, 1.44) 0.15s;
+    transition: 0.3s all cubic-bezier(.87, -.41, .19, 1.44), 1.5s right cubic-bezier(.87, -.41, .19, 1.44) 0.15s;
     /* transition: padding 0.5s ease-in-out; */
 }
 
@@ -537,9 +537,12 @@ section{
     font-weight: 600;  
 }
 
-.buttons{
-    padding-left: 20px; 
-    justify-content: center;
+.buttons{ 
+    align-items: center;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-end;  
 }
 
 .buttons p{
@@ -714,6 +717,13 @@ section{
     padding-top: 60px; 
     padding-bottom: 60px; 
 }
+
+.top a{
+    width: 100%;
+    justify-content: center; 
+    display: flex; 
+}
+
 .top button{
     color: #C2C2C2;  
     background-color: transparent;
@@ -723,5 +733,10 @@ section{
 
 .top button:hover{
     color: #333;
+    cursor: pointer !important;
 }
 
+.top a:hover{
+    text-decoration: none; 
+    cursor: pointer;
+}

@@ -89,15 +89,15 @@
 
 #work{
     position: relative; 
-    top: -100px; 
+    top: 15px; 
 }
 /* HERO SECTION */ 
 /* moon*/ 
-.page {
+/* .page {
     padding-top: 50px;
     width: 100%; 
     height: 100vh; 
-}
+} */
 
 #scene{
     overflow:hidden; 
@@ -367,6 +367,13 @@
 
 
 /* Body */ 
+.portfolios{
+    position: relative; 
+    top: 15vh; 
+    padding-bottom: 10%; 
+    overflow-x: hidden; 
+}
+
 .portfolio{
     margin-left: 10%; 
     justify-content: flex-end;  
@@ -374,7 +381,7 @@
     padding: 50px; 
     padding-bottom: 0; 
     overflow-x: hidden; 
-    height: 100vh; 
+    height: 90vh; 
 }
 
 .project{
@@ -398,26 +405,29 @@
 
 .textOverlay{
     position: absolute; 
-    top: 169vh; 
+    top: 67vh; 
     left: 16%; 
     visibility: hidden;
     font-size: 2rem;  
+    z-index: 20; 
 }
 
 .textOverlay2{
     position: absolute; 
-    top: 269vh; 
+    top: 157vh; 
     left: 73%; 
     visibility: hidden;
-    font-size: 2rem;  
+    font-size: 2rem; 
+    z-index: 20;  
 }
 
 .textOverlay3{
     position: absolute; 
-    top: 369vh; 
+    top: 247vh; 
     left: 16%; 
     visibility: hidden;
     font-size: 2rem;  
+    z-index: 20; 
 }
 
 .image:hover .textOverlay, .image:hover .textOverlay2, .image:hover .textOverlay3{
@@ -572,15 +582,23 @@
 }
 
  /* POPPING CIRCLES */
- #pop1{
-    position: absolute; 
-    top: 180vh; 
- }
-
- #pop2{
-
- }
-
+ .section1 {
+    width: 70%;
+    height: 30%;
+    overflow: visible;
+    position: absolute;
+    top: 75vh; 
+    left: 87vw;
+    z-index: 25;
+  }
+  
+  .pop1{
+      width: 10px; 
+      height: 10px; 
+      background-color: rgb(149, 211, 228); 
+      border-radius: 50%; 
+      display: inline-block;  
+  }
 
 /* Extra small devices (portrait phones, less than 576px) */ 
 @media (max-width: 575.98px) { 
@@ -615,6 +633,12 @@
 /*  Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) { 
 
- }
+}
 
 
+.sp-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+    

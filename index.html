@@ -6,6 +6,7 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/stackpage.css" />
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="portfolio.js"></script>
@@ -13,47 +14,46 @@
     <script type="text/javascript" src="replaceText.js"></script>
     <script src="scroll.js"></script>
 
+
     <title>Aliya Rajwani</title>
   </head>
-  <body>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <a class="navbar-brand" href="#">Aliya Rajwani</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">Resume</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Get In Touch
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="mailto:rajwani.aliya@gmail.com">Email</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://www.linkedin.com/in/aliya-rajwani-b1466117b/">LinkedIn</a>
+  <body>     
+      <div class="wrap sp-container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+              <a class="navbar-brand" href="#">Aliya Rajwani</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="">Resume</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Get In Touch
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="mailto:rajwani.aliya@gmail.com">Email</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://www.linkedin.com/in/aliya-rajwani-b1466117b/">LinkedIn</a>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- POPPING CIRCLES -->
-      <span id="pop1"></span>
-      <span id="pop2"></span>
-      <div class="mainbag">
-        <div>
+        </nav>
+        <div id="page-1" class="page">
+          <div class="container">
             <div class="scroll">
               <a href="https://www.linkedin.com/in/aliya-rajwani-b1466117b/" target="_blank" class="linkedin"><img src="assets/linkedin.svg"></a>
               <a href="https://github.com/rajwanialiya" target="_blank" class="github"><img src="assets/github.svg"/></a>
-              <a href="mailto:rajwani.aliya@gmail.com" target="_blank" class="email"><img src="assets/email.svg"/></a>
+              <a href="mailto:rajwani.aliya@gmail.com" class="email"><img src="assets/email.svg"/></a>
               <img class="mouse" src="assets/mouse.svg"/>
               <!-- <p class="text">Scrolldown</p> -->
               <svg class="line" height="210" width="40">
@@ -72,13 +72,13 @@
               <li class="layer" data-depth="-0.4" id="secondCircle">
                     <span class="circle2"></span>
               </li>
-              <li class="layer" data-depth="0.7" id="thirdCircle">
+              <li class="layer" data-depth="0.8" id="thirdCircle">
                     <span class="circle3"></span>
               </li>
               <li class="layer" data-depth="-0.1" id="fourthCircle">
                     <span class="circle4"></span>
               </li>
-              <li class="layer" data-depth="0.2" id="fifthCircle">
+              <li class="layer" data-depth="0.25" id="fifthCircle">
                     <span class="circle5"></span>
               </li>
               <li class="layer" data-depth="0" id="sixthCircle">
@@ -93,69 +93,71 @@
                 <span id="typed"></span>   
               </li>
             </ul>   
+          </div>
         </div>
-        <div>
-          <div id="work"></div> 
-          <div class="portfolio">
-            <div class="project"> 
-              <div class="image">
-                  <h2 class="textOverlay">Read More</h2>
-                  <a href="pages/flashfoodSite.html"><img src="assets/Website-Mockup.png"></a>
-              </div>
-              <div class="description">
-                <p class="category">Web Development & UI/UX</p>
-                <h2 class="title">Flashfood.com</h2>
-                <div id="description">
-                  <p class="blurb">As Flashfood grew to reach a wider audience, its brand evolved and features were added to the app. My task for this project was to work with the Head of Product & Design and the company's CTO to design and implement a scalable updated main website that reflected these changes.</p>
-                  <div class="next">
-                    <a href="pages/flashfoodSite.html" class="visit"><img src="assets/casestudy.svg"></a>
-                    <a href="https://www.flashfood.com/" target="_blank" class="visit"><img src="assets/globe.svg"></a>
+        <div id="work"></div>
+          <div id="page-2" class="page">
+              <section class="section1" id="js-hero" style="overflow-x: hidden">
+                  <span class="pop1"></span>
+              </section>
+            <div class="container">
+              <div class="portfolios">
+                <div class="portfolio">
+                  <div class="project"> 
+                    <div class="image">
+                        <h2 class="textOverlay">Read More</h2>
+                        <a href="pages/flashfoodSite.html"><img src="assets/Website-Mockup.png"></a>
+                    </div>
+                    <div class="description">
+                      <p class="category">Web Development & UI/UX</p>
+                      <h2 class="title">Flashfood.com</h2>
+                      <div id="description">
+                        <p class="blurb">As Flashfood grew to reach a wider audience, its brand evolved and features were added to the app. My task for this project was to work with the Head of Product & Design and the company's CTO to design and implement a scalable updated main website that reflected these changes.</p>
+                        <div class="next">
+                          <a href="pages/flashfoodSite.html" class="visit"><img src="assets/casestudy.svg"></a>
+                          <a href="https://www.flashfood.com/" target="_blank" class="visit"><img src="assets/globe.svg"></a>
+                        </div>
+                      </div>
+                      <ul class="skills">
+                          <li>Responsive Design</li>
+                          <li>JavaScript</li>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>Ajax</li>
+                      </ul>
+                      <!-- <div class="moreDiv"><button onclick="window.location.href='pages/flashfoodSite.html'" class="more">Read More →</button></div> -->
+                    </div>
                   </div>
                 </div>
-                <ul class="skills">
-                    <li>Responsive Design</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Ajax</li>
-                </ul>
-                <!-- <div class="moreDiv"><button onclick="window.location.href='pages/flashfoodSite.html'" class="more">Read More →</button></div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div> 
-          <div class="portfolio">
-            <div class="project"> 
-              <div class="description">
-                  <p class="category2">Web Development & Back-End</p>
-                  <h2 class="title2">Food Waste Counter</h2>
-                  <div id="description">
-                    <div class="next2">
-                      <a href="pages/counter.html" class="visit"><img src="assets/casestudy.svg"></a>
-                      <a href="https://www.flashfood.com/en/food-waste" target="_blank" class="visit2"><img src="assets/globe.svg"></a>
-                    </div>
-                    <p class="blurb2">My task was to create a count-up to display the amount of food waste diverted from landfills by Flashfood users, in real-time. This project involved pulling statistics from the Flashfood database to update the counter regularly, creating an API endpoint to reference when embedding the counter, and animating the count-up to increase interactivity.</p>
+                <div class="portfolio">
+                  <div class="project"> 
+                    <div class="description">
+                        <p class="category2">Web Development & Back-End</p>
+                        <h2 class="title2">Food Waste Counter</h2>
+                        <div id="description">
+                          <div class="next2">
+                            <a href="pages/counter.html" class="visit"><img src="assets/casestudy.svg"></a>
+                            <a href="https://www.flashfood.com/en/food-waste" target="_blank" class="visit2"><img src="assets/globe.svg"></a>
+                          </div>
+                          <p class="blurb2">My task was to create a count-up to display the amount of food waste diverted from landfills by Flashfood users, in real-time. This project involved pulling statistics from the Flashfood database to update the counter regularly, creating an API endpoint to reference when embedding the counter, and animating the count-up to increase interactivity.</p>
+                        </div>
+                        <ul class="skills2">
+                          <li>Javascript</li>
+                          <li>SQL</li>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>Vue</li>
+                          <li>Git</li>
+                        </ul>
+                        <!-- <div class="moreDiv2"><button class="more2">Read More →</button></div> -->
+                    </div>  
+                    <div class="image">
+                      <h2 class="textOverlay2">Read More</h2>
+                      <a href="pages/counter.html"><img src="assets/mockup2.png"></a>
+                    </div>  
                   </div>
-                  <ul class="skills2">
-                    <li>Javascript</li>
-                    <li>SQL</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Vue</li>
-                    <li>Git</li>
-                  </ul>
-                  <!-- <div class="moreDiv2"><button class="more2">Read More →</button></div> -->
-              </div>  
-              <div class="image">
-                <h2 class="textOverlay2">Read More</h2>
-                <a href="pages/counter.html"><img src="assets/mockup2.png"></a>
-              </div>  
-            </div>
-          </div>
-        </div>
-        <div>
-        <div class="portfolio">
+                </div>
+                <div class="portfolio">
             <div class="project"> 
                 <div class="image">
                     <!-- <h2 class="textOverlay3">View Project</h2> -->
@@ -183,7 +185,10 @@
                   </div>
                 </div>
               </div>       
+            </div>
+          </div>
       </div>
+      
       
       
       <!--<script>
@@ -207,15 +212,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- popping bubbles -->    
+    <!-- popping bubbles --> 
+    <script src="jquery.stackpage.js"></script>   
     <script>
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      $("#js-hero img").css({
-          width: (0 + scroll/5) + "%"
-      })
-    })
+    $(document).ready(function() {
+      $(".page").stackpage({
+        parent: '.wrap'
+      });
+    });	
     </script>
 
+    <!-- popping bubbles -->
+    <script>
+      $(window).scroll(function() {
+        var width = $('.pop1').width()
+        var scroll = $(window).scrollTop();
+        console.log(scroll); 
+        
+        if (scroll < 1200){
+          $(".pop1").css({
+            width: (0 + scroll/7) + "px", 
+            height: width + "px",
+            left: (700 + scroll/12) + "px"
+          })
+        }
+        // } else {
+        //   $(".pop1").css({
+        //     width: "200px", 
+        // }
+        console.log('width:' + $(".pop1").width()); 
+        console.log('height:' + $(".pop1").height()); 
+      })
+    </script>
   </body>
 </html>

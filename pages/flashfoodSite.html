@@ -29,12 +29,12 @@
             <a class="getInTouch" href="mailto:rajwani.aliya@gmail.com"><p>Let's Talk</p></a>
         </div>
     </nav>
-    <div class="side" id="top">
+    <div class="side">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>  
     </div>
-    <div class="header"></div>
+    <div class="header" id="BackToTop"></div>
     <div id="caseStudy">
         <div class="intro">
             <div class="title">
@@ -143,17 +143,18 @@
             </section>
             <!-- Section 4 -->
             <h2 style="padding-top: 12px">Design</h2>
-            <h4>Visual Style</h4>
             <div class="VisualStyles">
                 <div class="letters">
                     <h1>Ab</h1>
                     <h2>SF Pro Text</h2>
                 </div>
                 <div class="buttons">
+                    <container>
                     <p>Inactive State</p>
                     <button class="inactive">Button</button>
                     <p>Active State</p> 
                     <button class="active">Button</button>
+                    </container>
                 </div>
                 <div class="image"><img src="../assets/visualStyles.svg"/></div>
                 <div class="colours">
@@ -232,7 +233,7 @@
                 </div>
             </div> -->
             <div class="top" style="width:100%; display:flex; flex-direction:row; justify-content: center">
-                <button href="#top" style="width: 20%"> ↑ Back to Top</button>
+                <a href="#BackToTop"><button style="width: 20%"> ↑ Back to Top</button></a>
             </div>
 
         </div>
@@ -301,11 +302,6 @@
         //     });
         // });
 
-        // speed up vid
-        var vid = document.querySelector('video');
-        vid.playbackRate = 1.5;
-        console.log(vid.playbackRate); 
-
         // expanding wireframes
         
         function openTab(tabName) {
@@ -316,5 +312,17 @@
             }
             document.getElementById(tabName).style.display = "block";
         }
+
+    </script>
+
+    <!-- Scroll delay -->
+    <script>
+        var top = $('#BackToTop')[0]; 
+        $(top).click(function(){
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+        return false;
+        });
     </script>
 </body>

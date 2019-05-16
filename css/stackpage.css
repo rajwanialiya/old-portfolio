@@ -1,0 +1,53 @@
+
+
+.container {
+	width: 100%;
+	margin: 0;
+	padding:0; 
+}
+
+#page-1 {
+	background: #446CB3;
+	height: 100vh;
+	z-index: 3;
+	overflow-x: hidden; 
+}
+
+#page-2 {
+	z-index: 2;
+	overflow-x: hidden; 
+}
+
+.page {
+	/* height: 1200px; */
+	width: 100%;
+	box-shadow: 0 10vh 40px rgba(0,0,0,.1);
+	position: relative;
+	overflow: hidden;
+}
+
+.sp-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.wrap {
+	z-index: 1;
+	position: relative;
+}
+
+.ex {
+	color: #000;
+	background: rgba(255,255,255,.5);
+	margin: 0;
+	width: 100%;
+	position: fixed;
+	z-index: -2;
+}
+
+@media (min-width: 1px){
+	.container {
+		max-width: 100%;
+	}
+}
