@@ -3,7 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-16.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-32.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-57.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-60.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-64.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-70.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-72.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-76.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-96.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-114.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-120.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-144.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-150.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-152.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-160.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-180.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-310.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon-76.png' />
     
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/stackpage.css" />
@@ -100,6 +121,12 @@
               <section class="section1" id="js-hero" style="overflow-x: hidden">
                   <span class="pop1"></span>
               </section>
+              <section class="section2" id="js-hero" style="overflow-x: hidden">
+                <span class="pop2"></span>
+              </section>
+              <section class="section3" id="js-hero" style="overflow-x: hidden">
+                <span class="pop3"></span>
+              </section>
             <div class="container">
               <div class="portfolios">
                 <div class="portfolio">
@@ -146,7 +173,7 @@
                           <li>SQL</li>
                           <li>HTML</li>
                           <li>CSS</li>
-                          <li>Vue</li>
+                          <li>Node.JS</li>
                           <li>Git</li>
                         </ul>
                         <!-- <div class="moreDiv2"><button class="more2">Read More →</button></div> -->
@@ -167,18 +194,17 @@
                       <p class="category">App Development & UI/UX</p>
                       <h2 class="title">Nailed It</h2>
                       <div id="description">
-                        <p class="blurb">“Nailed It” is a collaboratively developed app that won second place at the TechXplore Healthcare & AI hackathon. The app uses open-source APIs and Python to perform early-stage diagnosis of anemia, illnesses stemmed from oxygen deprivation, and various infections by analyzing the discrepancy between a user's skin and nail colours
+                        <p class="blurb">“Nailed It” is a collaboratively developed app that won second place at the TechXplore Healthcare & AI hackathon. The app uses open-source machine learning libraries and Python to perform early-stage diagnosis of anemia, oxygen deprivation illnesses, and various infections by analyzing the colour discrepancy between users' skin and nails.
                           </p>
                         <div class="next">
                           <a href="" target="_blank" class="visit"><img src="assets/github2.svg"></a>
                         </div>
                       </div>
                       <ul class="skills">
-                        <li>Responsive Design</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Skill</li>
+                        <li>Python</li>
+                        <li>TensorFlow</li>
+                        <li>User Experience</li>
+                        <li>Figma</li>
                       </ul>
                       <!-- <div class="moreDiv"><button class="more">Read More →</button></div> -->
                     </div>
@@ -212,7 +238,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- popping bubbles --> 
     <script src="jquery.stackpage.js"></script>   
     <script>
     $(document).ready(function() {
@@ -225,15 +250,33 @@
     <!-- popping bubbles -->
     <script>
       $(window).scroll(function() {
-        var width = $('.pop1').width()
+        var width = $('.pop1').width();
+        var width2 = $('.pop2').width(); 
+        var width3 = $('.pop3').width(); 
         var scroll = $(window).scrollTop();
         console.log(scroll); 
         
-        if (scroll < 1200){
+        if (scroll < 1000){
           $(".pop1").css({
-            width: (0 + scroll/7) + "px", 
+            width: (0 + scroll/3.5) + "px", 
             height: width + "px",
-            left: (700 + scroll/12) + "px"
+            // transform: translateX((scroll/5) + "px")
+          })
+        }
+        
+        // if (scroll < 1200){
+        //   $(".pop2").css({
+        //     width: (20 + scroll/11) + "px", 
+        //     height: width2 + "px",
+        //     // transform: translateX((scroll/5) + "px")
+        //   })
+        // }
+
+        if (scroll < 800){
+          $(".pop3").css({
+            width: (0 + scroll/6) + "px", 
+            height: width3 + "px",
+            // transform: translateX((scroll/5) + "px")
           })
         }
         // } else {

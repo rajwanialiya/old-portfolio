@@ -14,7 +14,7 @@ $(document).ready(function(){
         strings: text,
         typeSpeed: 15,
         backSpeed: 15,
-        backDelay: 2000,
+        backDelay: 2500,
         startDelay: 1000,
         loop: true,
         showCursor: true,

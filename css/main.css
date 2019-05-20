@@ -17,6 +17,10 @@
     visibility: visible; 
 }
 
+.nav-link.dropdown-toggle:hover{
+    cursor: pointer !important;
+}
+
 .bg-light{
     background-color: rgba(255,255,255, 0) !important; 
 }
@@ -194,7 +198,7 @@
     height: 200px;
     width: 200px;
     /* background-color: rgb(239, 205, 215); */
-    background-color: rgba(185, 156, 228, 0.4 ); 
+    background-color: rgba(236, 149, 169, 0.5); 
     border-radius: 50%;
     display: inline-block; 
 }
@@ -381,7 +385,7 @@
     padding: 50px; 
     padding-bottom: 0; 
     overflow-x: hidden; 
-    height: 90vh; 
+    height: 93vh; 
 }
 
 .project{
@@ -405,7 +409,7 @@
 
 .textOverlay{
     position: absolute; 
-    top: 67vh; 
+    top: 67.4vh; 
     left: 16%; 
     visibility: hidden;
     font-size: 2rem;  
@@ -414,7 +418,7 @@
 
 .textOverlay2{
     position: absolute; 
-    top: 157vh; 
+    top: 160.4vh; 
     left: 73%; 
     visibility: hidden;
     font-size: 2rem; 
@@ -423,7 +427,7 @@
 
 .textOverlay3{
     position: absolute; 
-    top: 247vh; 
+    top: 253.4vh; 
     left: 16%; 
     visibility: hidden;
     font-size: 2rem;  
@@ -469,8 +473,8 @@
 }
 
 .blurb{ 
-    background-color: rgb(149, 211, 228);  
-    opacity: 0.8; 
+    background-color: rgb(243, 247, 253);  
+    opacity: 0.9; 
     color: black; 
     padding: 20px 30px; 
     position: relative;
@@ -479,8 +483,8 @@
 }
 
 .blurb2{ 
-    background-color: rgb(152, 213, 229);  
-    opacity: 0.8; 
+    background-color: rgb(243, 247, 253);  
+    opacity: 0.9; 
     color: black; 
     padding: 20px 30px;
     position: relative;
@@ -582,26 +586,66 @@
 }
 
  /* POPPING CIRCLES */
- .section1 {
+ .section1{
     width: 70%;
     height: 30%;
     overflow: visible;
     position: absolute;
-    top: 75vh; 
-    left: 87vw;
+    top: 70vh; 
+    left: 85vw;
     z-index: 25;
-  }
+}
   
   .pop1{
       width: 10px; 
       height: 10px; 
-      background-color: rgb(149, 211, 228); 
+      background-color: rgba(187, 159, 229, 0.7); 
       border-radius: 50%; 
       display: inline-block;  
+}
+
+.section2{
+    width: 70%;
+    height: 30%;
+    overflow: visible;
+    position: absolute;
+    left: -1vw; 
+    top: 45vh; 
+    z-index: 25;
+}
+
+.pop2{
+    width: 60px; 
+    height: 60px; 
+    background-color: rgba(187, 159, 229, 0.7); 
+    border-radius: 50%; 
+    display: inline-block;  
+}
+
+.section3{
+    width: 80%;
+    height: 70%;
+    overflow: visible;
+    position: absolute;
+    left: -70vw; 
+    top: 25vh; 
+    z-index: 25;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /* display: flex;
+    justify-content: flex-end;  */
   }
 
+  .pop3{
+    width: 10px; 
+    height: 10px; 
+    background-color: rgba(187, 159, 229, 0.7); 
+    border-radius: 50%; 
+    display: inline-block;  
+}
+
 /* Extra small devices (portrait phones, less than 576px) */ 
-@media (max-width: 575.98px) { 
+/* @media (max-width: 575.98px) { 
     .navbar{
         padding: 20px 24px ;  
     }
@@ -617,18 +661,104 @@
         width: 150%;
         height: 160%;
     }
- }
+ } */
 
 /*  Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) { 
+    /* Navbar */
     .navbar{
         padding: 20px 24px;
     }
 
-    .page{
-        padding-top: 80px;  
+    .navbar-brand{
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    .navbar-toggler{
+        padding: 0; 
+    }
+
+    #page-1{
+        background-color: white; 
+    }
+
+    .scroll{
+        display:none; 
+    }
+
+    /* hero part */
+    .layer{
+        position: relative; 
+    }
+
+    .layer h1{
+        font-size: 24px; 
+        line-height: 40px; 
+    }
+
+    .layer h2, #typed{
+        font-size: 18px; 
+        line-height: 35px; 
+    }
+
+    [data-depth="0.1"], [data-depth="0.2"]{
+        padding-left: 24px; 
+        padding-right: 24px; 
+        width: 100%; 
+        position: absolute !important; 
+         
+        left: 0% !important; 
+    }
+
+    #moon{
+        left: -28%; 
+        width: 130%; 
+        top: 25vh; 
+    }
+
+    #secondCircle{
+        display: none !important; 
+    }
+
+    #firstCircle{
+        display: none !important; 
+    }
+
+    #thirdCircle {
+        top: 83% !important;
+        left: 86% !important;
+    }
+
+    /* pink circle */
+    .circle5{
+        height: 120px; 
+        width: 120px; 
+    }
+
+    #fifthCircle{
+        top: 15% !important; 
+        left: 2% !important; 
+    }
+
+    /* hide popping circles */
+    .pop1, .pop2, .pop3{
+        display: none; 
+    }
+
+    /* portfolios */
+    .portfolios{
+        margin-left: 24px; 
+        margin-right: 24px; 
+    }
+
+    .portfolio{
+        margin: 0; 
+        padding: 0; 
+        width: 100%; 
     }
 }
+
 
 /*  Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) { 
