@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+#display{
+    display: none;
+}
+
 img{
     padding-top: 20px; 
     padding-bottom: 20px; 
@@ -739,4 +743,57 @@ section{
 .top a:hover{
     text-decoration: none; 
     cursor: pointer;
+}
+
+@media (max-width: 767.98px) { 
+    .WHOLE{
+        display: none;
+    }
+
+    #display{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-content: center; 
+        width: 100vw; 
+        height: 100vh; 
+        padding: 24px; 
+        color: #333; 
+        background-color: #d6e2f5;
+        overflow-y: hidden; 
+    }
+
+    #display a{
+        color: darkgrey; 
+        font-weight: 500;
+    }
+
+    #display a:hover{
+        color: #333; 
+        text-decoration: none; 
+    }
+
+    #display h2{
+        font-size: 20px; 
+    }
+
+    #display h1, #display h2, #display p{
+        z-index: 4; 
+        position: relative; 
+        top: -30vh;  
+    }
+
+    #display h1, #display h2{
+        line-height: 35px;
+    }
+
+    #moon2{
+        left: -25%; 
+        width: 130%; 
+        top: 20vh; 
+        position: relative; 
+        overflow-y: hidden;
+        height: 100% !important; 
+        opacity: 0.8; 
+    }
 }
