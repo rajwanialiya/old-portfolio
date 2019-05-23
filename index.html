@@ -127,6 +127,12 @@
               <section class="section3" id="js-hero" style="overflow-x: hidden">
                 <span class="pop3"></span>
               </section>
+              <section class="section4" id="js-hero" style="overflow-x: hidden">
+                <span class="pop4"></span>
+              </section>
+              <section class="section5" id="js-hero" style="overflow-x: hidden">
+                <span class="pop5"></span>
+              </section>
             <div class="container">
               <div class="portfolios">
                 <div class="portfolio">
@@ -258,6 +264,8 @@
         var width = $('.pop1').width();
         var width2 = $('.pop2').width(); 
         var width3 = $('.pop3').width(); 
+        var width4 = $('.pop4').width(); 
+        var width5 = $('.pop5').width(); 
         var scroll = $(window).scrollTop();
         console.log(scroll); 
         
@@ -281,6 +289,22 @@
           $(".pop3").css({
             width: (0 + scroll/7) + "px", 
             height: width3 + "px",
+            // transform: translateX((scroll/5) + "px")
+          })
+        }
+
+        if (scroll < 1900){
+          $(".pop4").css({
+            width: (-80 + scroll/7.5) + "px", 
+            height: width4 + "px",
+            // transform: translateX((scroll/5) + "px")
+          })
+        }
+
+        if (scroll < 3000){
+          $(".pop5").css({
+            width: (-550 + scroll/2.5) + "px", 
+            height: width5 + "px",
             // transform: translateX((scroll/5) + "px")
           })
         }

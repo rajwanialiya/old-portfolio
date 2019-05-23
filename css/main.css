@@ -413,8 +413,8 @@
 
 .textOverlay{
     position: absolute; 
-    top: 67.4vh; 
-    left: 16%; 
+    top: 65vh; 
+    left: 17%; 
     visibility: hidden;
     font-size: 2rem;  
     z-index: 20; 
@@ -422,8 +422,8 @@
 
 .textOverlay2{
     position: absolute; 
-    top: 160.4vh; 
-    left: 73%; 
+    top: 158.4vh; 
+    left: 72%; 
     visibility: hidden;
     font-size: 2rem; 
     z-index: 20;  
@@ -431,7 +431,7 @@
 
 .textOverlay3{
     position: absolute; 
-    top: 253.4vh; 
+    top: 252.4vh; 
     left: 16%; 
     visibility: hidden;
     font-size: 2rem;  
@@ -638,9 +638,9 @@
     transform: scaleX(-1);
     /* display: flex;
     justify-content: flex-end;  */
-  }
+}
 
-  .pop3{
+.pop3{
     width: 10px; 
     height: 10px; 
     background-color: rgba(176, 205, 252, 0.5); 
@@ -648,6 +648,47 @@
     display: inline-block;  
 }
 
+.section4{
+    width: 80%;
+    height: 70%;
+    overflow: visible;
+    position: absolute;
+    left: -64vw; 
+    top: 178vh; 
+    z-index: 25;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /* display: flex;
+    justify-content: flex-end;  */
+  }
+
+.pop4{
+    width: 10px; 
+    height: 10px; 
+    background-color: rgba(242, 180, 111, 0.3); 
+    border-radius: 50%; 
+    display: inline-block;  
+}
+
+.section5{
+    width: 80%;
+    height: 70%;
+    overflow: visible;
+    position: absolute;
+    left: 79vw; 
+    top: 265vh; 
+    z-index: 25;
+    /* display: flex;
+    justify-content: flex-end;  */
+  }
+
+.pop5{
+    width: 10px; 
+    height: 10px; 
+    background-color: rgba(180, 223, 227, 0.7); 
+    border-radius: 50%; 
+    display: inline-block;  
+}
 /* Extra small devices (portrait phones, less than 576px) */ 
 /* @media (max-width: 575.98px) { 
     .navbar{
