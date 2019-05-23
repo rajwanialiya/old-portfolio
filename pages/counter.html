@@ -26,7 +26,7 @@
         </div>
         <div class="new">
             <a class="getInTouch" href="mailto:rajwani.aliya@gmail.com"><p>Let's Talk</p></a>
-            <a class="resume" href="https://drive.google.com/file/d/1hV2jvH8frgEkRwzt3V2eXakpKQDCh5tD/view?usp=sharing"><p>Resume</p></a>
+            <a class="resume" target="_blank" href="https://drive.google.com/file/d/1hV2jvH8frgEkRwzt3V2eXakpKQDCh5tD/view?usp=sharing"><p>Resume</p></a>
             <a class="about" href="../index.html"><p>About</p></a>
             <a class="returnHome" href="../index.html"><p>Home</p></a>  
         </div>
@@ -103,10 +103,31 @@
                     </div>
                     
                     <h4>Create an additional endpoint in the Flashfood API to embed the counter</h4>      
-                    <p>To access the data in Flashfood’s API on the main website, an additional endpoint was required.</p>
+                    <p>To access the statistics required from Flashfood's database from the main website, an additional endpoint in Flashfood’s API was required. This was created using Node.JS. 
 
+                        An unexpected error that I came across while completing this task was a Cross-Origin Resource Sharing (CORS) error. This is because the response request was missing an Access-Control-Allow-Origin header and as a result the Flashfood database couldn't be accessed by the main website. 
+
+                        The following code was used to overcome this issue: 
+                    </p>
+                    <pre>
+                        <code> 
+                            module.exports = function(app, events) {
+                                var cors = require('cors')
+                                const whitelist = ['https://www.flashfood.com/'];
+                                var corsOptions = {
+                                    origin: function (origin, callback) {
+                                        if (whitelist.indexOf(origin) !== -1) {
+                                        callback(null, true)
+                                        } else {
+                                        callback(new Error('Not allowed by CORS'))
+                                        }
+                                    }
+                                }
+                            }
+                        </code>
+                    </pre>
                     <h4>Style the new feature</h4>      
-                    <p>The final step in this project was to style to the feature to match the aesthetic of the rest of the website. To do this I removed the report's border and changed its font, colour, size and position</p>
+                    <p>The final step in this project was to style the feature to match the aesthetic of the rest of the website. To do this I removed the report's border and changed its font, colour, size and position.</p>
                 
             
             <!-- Section 2 -->
@@ -118,14 +139,10 @@
                         <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"></path>
                     </svg>
                 </div>
-                <p>After reviewing the goals and project limitations, a list of requirements to be met by the redesign, was drafted. </p>
+                <p>Overall, the counter met the objectives it was meant to achieve. After demonstrating the feature to the Flashfood team and implementing their suggestions, I was able to display a counter with the optimal count-up and delay speeds. The following are steps that could be taken to further improve this feature in the future.</p>
                 <ul class="requirements"> 
-                    <li>Must be responsive and accessible on multiple devices spanning from desktop to mobile</li>
-                    <li>Must be available in both French and English</li>
-                    <li>Must encourage visitors to input their contact information (email address) into one of the available fields to optimize conversion rates</li>
-                    <li>Information must be presented in a clear and concise manner to retain the visitor’s attention, as the existing solution is dense and can be overwhelming</li>
-                    <li>The overall web experience should reflect the company’s culture and commitment to positive global change</li>
-                    <li>Must reduce friction points and provide multiple entry points to all webpages to encourage the user’s journey</li>
+                    <li>The report's loading time can sometimes take longer than expected. If this time were reduced, the feature would be more effective.</li>
+                    <li>The counter currently displays the amount of food waste diverted from landfills. However, on the Flashfood app, there is an "Impact" section that displays this statistic along with the amount of CO₂ diverted and money saved. To maintain consistency, it may be beneficial to display these statistics in a similar counter on the main website as well.</li>
                 </ul>
                 <div class="top" style="width:100%; display:flex; flex-direction:row; justify-content: center">
                     <a href="#Top"><button style="width: 20%"> ↑ Back to Top</button></a>
