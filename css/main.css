@@ -3,6 +3,10 @@
     margin: 0 ; 
 }
 
+#mobile{
+    display: none;  
+}
+
 /* body{
     background-color: rgb(243, 247, 253); 
 } */
@@ -198,7 +202,7 @@
     height: 200px;
     width: 200px;
     /* background-color: rgb(239, 205, 215); */
-    background-color: rgba(236, 149, 169, 0.5); 
+    background-color: rgba(239, 205, 215, 0.8); 
     border-radius: 50%;
     display: inline-block; 
 }
@@ -599,7 +603,7 @@
   .pop1{
       width: 10px; 
       height: 10px; 
-      background-color: rgba(187, 159, 229, 0.7); 
+      background-color: rgba(187, 159, 229, 0.5); 
       border-radius: 50%; 
       display: inline-block;  
 }
@@ -617,7 +621,7 @@
 .pop2{
     width: 60px; 
     height: 60px; 
-    background-color: rgba(187, 159, 229, 0.7); 
+    background-color: rgba(176, 205, 202, 0.7); 
     border-radius: 50%; 
     display: inline-block;  
 }
@@ -639,7 +643,7 @@
   .pop3{
     width: 10px; 
     height: 10px; 
-    background-color: rgba(187, 159, 229, 0.7); 
+    background-color: rgba(176, 205, 252, 0.5); 
     border-radius: 50%; 
     display: inline-block;  
 }
@@ -665,6 +669,10 @@
 
 /*  Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) { 
+    p, li{
+        font-weight: 300; 
+        line-height: 30px; 
+    }
     /* Navbar */
     .navbar{
         padding: 20px 24px;
@@ -753,9 +761,99 @@
     }
 
     .portfolio{
-        margin: 0; 
+        margin: 0;  
         padding: 0; 
+        width: 100%;
+        height: auto;  
+    }
+
+    .project{
+        flex-direction: column; 
+    }
+
+    .description{
         width: 100%; 
+    }
+
+    #description{
+        flex-direction: column; 
+        margin-top: 15px;
+        margin-bottom: 0;  
+    }
+
+    .blurb, .blurb2{
+        left: 0; 
+        padding: 15px; 
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .blurb2{
+        top: -50px; 
+    }
+
+    .category, .category2{
+        margin-top: 15px; 
+        margin-bottom: 5px; 
+    }
+
+    .next{
+        margin-left: 0; 
+        position: relative; 
+        top: 75px;
+        flex-direction: row;  
+    }
+
+    .next2{
+        margin-left: 0; 
+        position: relative; 
+        flex-direction: row; 
+        top: 430px; 
+    }
+
+    #none{
+        margin-left: 0; 
+        margin-right: 15px; 
+    }
+
+    .skills{
+        position: relative; 
+        top: -30px; 
+    }
+
+    .skills2{
+        position: relative; 
+        top: -45px; 
+    }
+
+    .visit{
+        width: 5.5vh; 
+        margin-left: 15px; 
+    }
+
+    .visit img{
+        margin-bottom: 8px; 
+    }
+
+    .skills li{
+        margin-right: 10px; 
+        margin-left: 0; 
+    }
+
+    #mobile{
+        display: block; 
+    }
+
+    #desktop{
+        display: none; 
+    }
+
+    .image img{
+        margin-top: 50px; 
+    }
+
+    #mobileHeight{
+        height: 100vh; 
     }
 }
 

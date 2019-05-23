@@ -121,9 +121,9 @@
               <section class="section1" id="js-hero" style="overflow-x: hidden">
                   <span class="pop1"></span>
               </section>
-              <section class="section2" id="js-hero" style="overflow-x: hidden">
+              <!-- <section class="section2" id="js-hero" style="overflow-x: hidden">
                 <span class="pop2"></span>
-              </section>
+              </section> -->
               <section class="section3" id="js-hero" style="overflow-x: hidden">
                 <span class="pop3"></span>
               </section>
@@ -158,12 +158,16 @@
                 </div>
                 <div class="portfolio">
                   <div class="project"> 
+                    <div class="image" id="mobile">
+                        <h2 class="textOverlay2">Read More</h2>
+                        <a href="pages/counter.html"><img src="assets/mockup2.png"></a>
+                    </div>  
                     <div class="description">
                         <p class="category2">Web Development & Back-End</p>
                         <h2 class="title2">Food Waste Counter</h2>
                         <div id="description">
                           <div class="next2">
-                            <a href="pages/counter.html" class="visit"><img src="assets/casestudy.svg"></a>
+                            <a href="pages/counter.html" class="visit" id="none"><img src="assets/casestudy.svg"></a>
                             <a href="https://www.flashfood.com/en/food-waste" target="_blank" class="visit2"><img src="assets/globe.svg"></a>
                           </div>
                           <p class="blurb2">My task was to create a count-up to display the amount of food waste diverted from landfills by Flashfood users, in real-time. This project involved pulling statistics from the Flashfood database to update the counter regularly, creating an API endpoint to reference when embedding the counter, and animating the count-up to increase interactivity.</p>
@@ -178,7 +182,7 @@
                         </ul>
                         <!-- <div class="moreDiv2"><button class="more2">Read More →</button></div> -->
                     </div>  
-                    <div class="image">
+                    <div class="image" id="desktop">
                       <h2 class="textOverlay2">Read More</h2>
                       <a href="pages/counter.html"><img src="assets/mockup2.png"></a>
                     </div>  
@@ -190,7 +194,7 @@
                     <!-- <h2 class="textOverlay3">View Project</h2> -->
                     <img src="assets/mockup3.png">
                 </div>
-                    <div class="description">
+                    <div class="description" id="mobileHeight">
                       <p class="category">App Development & UI/UX</p>
                       <h2 class="title">Nailed It</h2>
                       <div id="description">
@@ -203,7 +207,8 @@
                       <ul class="skills">
                         <li>Python</li>
                         <li>TensorFlow</li>
-                        <li>User Experience</li>
+                        <li id="desktop">User Experience</li>
+                        <li id="mobile">UI & UX</li>
                         <li>Figma</li>
                       </ul>
                       <!-- <div class="moreDiv"><button class="more">Read More →</button></div> -->
@@ -274,7 +279,7 @@
 
         if (scroll < 800){
           $(".pop3").css({
-            width: (0 + scroll/6) + "px", 
+            width: (0 + scroll/7) + "px", 
             height: width3 + "px",
             // transform: translateX((scroll/5) + "px")
           })
