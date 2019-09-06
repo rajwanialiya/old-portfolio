@@ -710,6 +710,14 @@
 
 /*  Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) { 
+    body{
+        height: 100vh; 
+    }
+
+    h2{
+        font-size: 24px; 
+    }
+
     p, li{
         font-weight: 300; 
         line-height: 30px; 
@@ -795,6 +803,10 @@
         display: none; 
     }
 
+    .section1, .section2, .section3, .section4, .section5{
+        display: none; 
+    }
+
     /* portfolios */
     .portfolios{
         margin-left: 24px; 
@@ -818,7 +830,7 @@
 
     #description{
         flex-direction: column; 
-        margin-top: 15px;
+        /* margin-top: 15px; */
         margin-bottom: 0;  
     }
 
@@ -834,8 +846,8 @@
     }
 
     .category, .category2{
-        margin-top: 15px; 
-        margin-bottom: 5px; 
+        margin-top: 10px; 
+        margin-bottom: 0px; 
     }
 
     .next{
